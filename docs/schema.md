@@ -59,11 +59,11 @@ body             | text      | not null
 
 
 ## votes
-(uniqueness constraint on author_id, votable_id, votable_type combinations)
+###(uniqueness constraint on author_id, votable_id, votable_type combinations)
 column name  | data type | details
 -------------|-----------|-----------------------
 id           | integer   | not null, primary key
 author_id    | integer   | not null, foreign_key (references user)
 votable_id   | integer   | not null, foreign_key (references votable)
 votable_type | string    | not null
-vote         | string    | 
+vote         | string    |

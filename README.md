@@ -18,7 +18,7 @@ Backbone. Users can:
 - [ ] Comment on recipes
 - [ ] View users' activity
 - [ ] Reply to annotations
-- [ ] Vote annotations and replies
+- [ ] Vote on annotations and replies
 - [ ] Search for recipes
 - [ ] Edit annotations
 
@@ -35,19 +35,19 @@ Backbone. Users can:
 I will implement user authentication in Rails based on the practices learned at
 App Academy. Recipes will be created using a Backbone view, and seen both
 at the Rails API and Backbone home links. The app will be pushed to Heroku and
-this vital functionality will be confirmed.
+this vital functionality will be confirmed before moving on.
 
 [Details][phase-one]
 
 ### Phase 2: Viewing Recipes, Comments, and Tags (~2 days)
-The initial recipe views will be extended to contain the views for creating and
-viewing annotations for the visited recipe. The AnnotationForm view will be
+The initial RecipeShow view will be extended to contain the views for creating
+and viewing annotations for the visited recipe. The AnnotationForm view will be
 toggled by highlighting valid sections of the recipe body.
 
 [Details][phase-two]
 
 ### Phase 3: Tagging and Commenting on Recipes (~2 days)
-The taggings, tags, and comments associations will be added to the recipes.
+The taggings, tags, and comments associations will be added to the recipe model.
 Backbone views will subsequently be added such that the collection of recipes
 having a particular tag may be accessed at once. Also, the RecipeShow view will
 be edited to contain the comments on a particular recipe.
