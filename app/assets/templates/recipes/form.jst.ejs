@@ -1,0 +1,16 @@
+<label>Title
+<input type="text" name="title" value="<%= recipe.escape("title") %>">
+</label>
+
+<br>
+<label>Body
+<textarea name="body"><%= recipe.escape("body") %></textarea>
+</label>
+
+<br>
+<label>Image URL
+<input type="text" name="image_url" value="<%= recipe.escape("image_url") %>">
+</label>
+
+<br>
+<button>Submit</button>
