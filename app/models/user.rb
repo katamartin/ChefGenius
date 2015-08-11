@@ -6,6 +6,14 @@ class User < ActiveRecord::Base
 
   after_initialize :ensure_session_token
 
+  has_many(
+    :recipes,
+    class_name: :Recipe,
+    foreign_key: :author_id,
+    primary_key: :id
+    dependent: :destroy
+  )
+
   def self.find_by_credentials(email, password)
     user = self.find_by(email: email)
     return nil unless user && user.valid_password?(password)
