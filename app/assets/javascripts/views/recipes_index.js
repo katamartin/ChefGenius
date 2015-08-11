@@ -6,7 +6,7 @@ ChefGenius.Views.RecipesIndex = Backbone.CompositeView.extend({
     this.collection.each(this.addRecipeItemView.bind(this));
   },
 
-  tagName: "recipes-index",
+  className: "recipes-index",
 
   template: JST["recipes/index"],
 
@@ -20,7 +20,7 @@ ChefGenius.Views.RecipesIndex = Backbone.CompositeView.extend({
   },
 
   render: function() {
-    this.$el.html("Recipes");
+    this.$el.html(this.template());
     this.attachSubviews();
     return this;
   }
