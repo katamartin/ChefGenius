@@ -1,0 +1,15 @@
+<h1><%= header_text %></h1>
+
+<form action="<%= action %>" method="post">
+  <%= authenticity_token %>
+  <label for="user_email">Email</label>
+  <input type="text" name="user[email]" id="user_email">
+
+  <label for="user_password">Password</label>
+  <input type="password" name="user[password]" id="user_password">
+
+  <input type="submit" value="<%= header_text %>">
+</form>
+
+<br>
+<%= link_to link_text, link_action %>
