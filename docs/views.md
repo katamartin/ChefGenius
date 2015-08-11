@@ -26,7 +26,7 @@
 
 
 [new-session]: ./wireframes/new_session.png
-[feed-show]: ./wireframes/landing_page.png
+[landing-page]: ./wireframes/landing_page.png
 [recipe-show]: ./wireframes/recipe_show.png
 [annotation-show]: ./wireframes/annotation_show.png
 [annotation-form]: ./wireframes/annotation_form.png

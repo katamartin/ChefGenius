@@ -5,7 +5,14 @@ ChefGenius.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
-    "": "recipesIndex"
+    "": "recipesIndex",
+    "recipes/new": "newRecipe"
+  },
+
+  newRecipe: function() {
+    var recipe = new ChefGenius.Models.Recipes();
+    var view = new ChefGenius.Views.RecipeForm({model: recipe});
+    this._swapView(view);
   },
 
   recipesIndex: function() {
