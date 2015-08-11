@@ -4,10 +4,14 @@ window.ChefGenius = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    new ChefGenius.Routers.Router({
+      $rootEl: $("#content"),
+      recipes: ChefGenius.Collections.recipes
+    });
+    Backbone.history.start();
   }
 };
 
-$(document).ready(function(){
-  ChefGenius.initialize();
-});
+// $(document).ready(function(){
+//   ChefGenius.initialize();
+// });

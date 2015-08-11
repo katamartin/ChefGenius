@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
     :recipes,
     class_name: :Recipe,
     foreign_key: :author_id,
-    primary_key: :id
+    primary_key: :id,
     dependent: :destroy
   )
 

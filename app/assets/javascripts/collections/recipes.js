@@ -3,3 +3,5 @@ ChefGenius.Collections.Recipes = Backbone.Collection.extend({
 
   url: "/api/recpies"
 });
+
+ChefGenius.Collections.recipes = new ChefGenius.Collections.Recipes();
