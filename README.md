@@ -36,7 +36,7 @@ Backbone. Users can:
 I will implement user authentication in Rails based on the practices learned at
 App Academy. Recipes will be created using a Backbone view, and seen both
 at the Rails API and Backbone home links. The app will be pushed to Heroku and
-this vital functionality will be confirmed before moving on.
+this functionality will be confirmed before moving on.
 
 [Details][phase-one]
 
