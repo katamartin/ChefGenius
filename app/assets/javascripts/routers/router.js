@@ -10,8 +10,10 @@ ChefGenius.Routers.Router = Backbone.Router.extend({
   },
 
   newRecipe: function() {
-    var recipe = new ChefGenius.Models.Recipes();
-    var view = new ChefGenius.Views.RecipeForm({model: recipe});
+    var recipe = new ChefGenius.Models.Recipe();
+    var view = new ChefGenius.Views.RecipeForm({model: recipe,
+                                                collection: this.recipes
+                                              });
     this._swapView(view);
   },
 

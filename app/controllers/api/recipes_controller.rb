@@ -1,4 +1,9 @@
 class Api::RecipesController < ApplicationController
+  def index
+    @recipes = Recipe.all
+    render :index
+  end
+
   def create
     @recipe = current_user.recipes.new(recipe_params)
     if @recipe.save
@@ -9,12 +14,8 @@ class Api::RecipesController < ApplicationController
   end
 
   def show
+    @recipe = Recipe.find(params[:id])
     render :show
-  end
-
-  def index
-    @recipes = Recipe.all
-    render :index
   end
 
   private
