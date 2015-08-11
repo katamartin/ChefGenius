@@ -1,16 +1,29 @@
-<label>Title
-<input type="text" name="title" value="<%= recipe.escape("title") %>">
-</label>
+<h1>New Recipe</h1>
 
+<div class="form-group">
+  <input type="text"
+         name="title"
+         class="form-control"
+         placeholder="Title"
+         value="<%= recipe.escape("title") %>">
+</div>
 <br>
-<label>Body
-<textarea name="body"><%= recipe.escape("body") %></textarea>
-</label>
 
+<div class"form-group">
+  <textarea name="body"
+            class="form-control"
+            rows="5"
+            placeholder="Body"><%= recipe.escape("body") %></textarea>
+</div>
 <br>
-<label>Image URL
-<input type="text" name="image_url" value="<%= recipe.escape("image_url") %>">
-</label>
+
+<div class"form-group">
+  <input type="text"
+         name="image_url"
+         class="form-control"
+         value="<%= recipe.escape("image_url") %>"
+         placeholder="Image URL">
+</div>
 
 <br>
 <button>Submit</button>
