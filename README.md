@@ -21,6 +21,7 @@ Backbone. Users can:
 - [ ] Vote on annotations and replies
 - [ ] Search for recipes
 - [ ] Edit annotations
+- [ ] Guest login
 
 ## Design Docs
 * [View Wireframes][views]
@@ -81,12 +82,11 @@ navigation bar.
 [Details][phase-six]
 
 ### Bonus Features (TBD)
-- [ ] Guest login
-- [ ] Multiple sessions/session management
 - [ ] Use Markdown for better recipe formatting
 - [ ] Typeahead/real-time search bar
 - [ ] Pagination/infinite scroll for recipe index
-- [ ] User avatars
+- [ ] Multiple sessions/session management
+- [ ] User avatars (Gravatar)
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md

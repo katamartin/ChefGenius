@@ -42,21 +42,13 @@ session_token   | string    | not null, unique
 image_url       | string    |
 
 ## comments
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign_key (references user)
-recipe_id   | integer   | not null, foreign_key (references recipe)
-body        | text      | not null
-
-## replies
 column name      | data type | details
 -----------------|-----------|-----------------------
 id               | integer   | not null, primary key
 author_id        | integer   | not null, foreign_key (references user)
-annotation_id    | integer   | not null, foreign_key (references annotation)
+commentable_id   | integer   | not null, foreign_key (references recipe/annoation)
+commentable_type | string    | not null
 body             | text      | not null
-
 
 ## votes
 ###(uniqueness constraint on author_id, votable_id, votable_type combinations)

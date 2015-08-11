@@ -15,7 +15,6 @@
 * users/new.html.erb
 * session/new.html.erb
 * root/root.html.erb
-* recipes/new.html.erb
 * recipes/show.json.jbuilder
 * recipes/index.json.jbuilder
 
