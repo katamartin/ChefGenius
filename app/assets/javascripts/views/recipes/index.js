@@ -12,7 +12,7 @@ ChefGenius.Views.RecipesIndex = Backbone.CompositeView.extend({
 
   addRecipeItemView: function(recipe) {
     var subview = new ChefGenius.Views.RecipeIndexItem({model: recipe});
-    this.addSubview(".annotation-form", subview);
+    this.addSubview(".recipes", subview);
   },
 
   removeRecipeItemView: function(recipe) {

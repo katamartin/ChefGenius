@@ -13,6 +13,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     var content = this.template({recipe: this.model});
     this.$el.html(content);
     this.attachSubviews();
+    this.attachAnnotationLinks();
     return this;
   },
 
@@ -21,8 +22,9 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     this.model.annotations().each(function(annotation){
       var start_idx = annotation.get("start_idx");
       var end_idx = annotation.get("end_idx");
-      if ( start_idx <= end || end_idx >= start ) {
-        valid = true;
+      if ( (start_idx < end && end_idx >= end) ||
+           (start_idx <= start && end_idx > start) ) {
+        valid = false;
       }
     });
 
@@ -44,18 +46,31 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       var domString = t.anchorNode.wholeText
       var start = t.getRangeAt(0).startOffset;
       var end = t.getRangeAt(0).endOffset;
-      var newLinesBefore = domString.slice(0, start).split('\n').length - 1;
-      var newLinesBetween = domString.slice(start, end).split('\n').length - 1;
-      var trueStart = start - 2 + newLinesBefore;
-      var trueEnd = end - 2 + newLinesBefore + newLinesBetween;
-      if (this.isValidRange(trueStart, trueEnd)) {
+      var range = this.model.fromDomString(domString, start, end);
+      debugger
+      if (this.isValidRange(range[0], range[1])) {
         var annotation = new ChefGenius.Models.Annotation();
-        annotation.set({"start_idx": trueStart,
-                        "end_idx": trueEnd,
+        annotation.set({"start_idx": range[0],
+                        "end_idx": range[1],
                         "recipe_id": this.model.get("id")
                       });
         this.addAnnotationFormView(annotation);
       }
     }
+  },
+
+  attachAnnotationLinks: function() {
+    var view = this;
+    var body = view.$(".recipe-body").text();
+    var bodySplit = body.split("");
+    this.model.annotations().each(function(annotation) {
+      var start = annotation.get("start_idx");
+      var end = annotation.get("end_idx");
+      var range = view.model.toDomString(body, start, end);
+      var id = annotation.get("id");
+      bodySplit[range[0]] = "<a href='javascript:void(0)' class='annotation' id='" + id + "'>" + bodySplit[range[0]];
+      bodySplit[range[1] - 1] = bodySplit[range[1] - 1] + "</a>";
+    });
+    this.$(".recipe-body").html(bodySplit.join(""));
   }
 });
