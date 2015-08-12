@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150811230101) do
     t.integer  "recipe_id",  null: false
     t.text     "body",       null: false
     t.integer  "start_idx",  null: false
-    t.integer  "end_index",  null: false
+    t.integer  "end_idx",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

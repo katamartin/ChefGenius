@@ -5,7 +5,7 @@ class CreateAnnotations < ActiveRecord::Migration
       t.integer :recipe_id, null: false
       t.text :body, null: false
       t.integer :start_idx, null: false
-      t.integer :end_index, null: false
+      t.integer :end_idx, null: false
 
       t.timestamps null: false
     end

@@ -12,23 +12,33 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   render: function() {
     var content = this.template({recipe: this.model});
     this.$el.html(content);
+    this.attachSubviews();
     return this;
   },
 
   isValidRange(start, end) {
-    var overlapping = false;
-    this.model.annotations.each(function(annotation){
+    var valid = true;
+    this.model.annotations().each(function(annotation){
       var start_idx = annotation.get("start_idx");
       var end_idx = annotation.get("end_idx");
       if ( start_idx <= end || end_idx >= start ) {
-        overlapping = true;
+        valid = true;
       }
     });
 
-    return overlapping;
+    return valid;
   },
 
-  isTextSelected: function() {
+  addAnnotationFormView: function(annotation) {
+    var subview = new ChefGenius.Views.AnnotationForm({
+      model: annotation,
+      collection: this.model.annotations()
+    });
+    this.addSubview(".annotation-form", subview);
+  },
+
+  isTextSelected: function(event) {
+    event.preventDefault();
     var t = (document.all) ? document.selection.createRange().text : document.getSelection();
     if (t.toString() && t.toString().trim().length > 0) {
       var domString = t.anchorNode.wholeText
@@ -38,12 +48,14 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       var newLinesBetween = domString.slice(start, end).split('\n').length - 1;
       var trueStart = start - 2 + newLinesBefore;
       var trueEnd = end - 2 + newLinesBefore + newLinesBetween;
-      // var range = [trueStart, trueEnd];
-      if this.isValidRange(trueStart, trueEnd) {
-        debugger
+      if (this.isValidRange(trueStart, trueEnd)) {
+        var annotation = new ChefGenius.Models.Annotation();
+        annotation.set({"start_idx": trueStart,
+                        "end_idx": trueEnd,
+                        "recipe_id": this.model.get("id")
+                      });
+        this.addAnnotationFormView(annotation);
       }
-      // var selection = this.model.get("body").slice(trueStart, trueEnd);
-      // debugger
     }
   }
 });
