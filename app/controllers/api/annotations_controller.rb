@@ -1,0 +1,27 @@
+class Api::AnnotationsController < ApplicationController
+  def create
+    @annotation = current_user.annotations.new(annotation_params)
+    if @annotation.save
+      render :show
+    else
+      render json: @annotation.errors.full_messages
+    end
+  end
+
+  def destroy
+    @annotation = Annotation.find(params[:id])
+    @recipe = @annotation.recipe
+    @annotation.try(:destroy)
+    render "recipes/show"
+  end
+
+  def show
+    @annotion = Annotation.find(params[:id])
+    render :show
+  end
+
+  private
+  def annotation_params
+    params.require(:annotation).permit(:recipe_id, :start_idx, :end_idx, :body)
+  end
+end

@@ -15,7 +15,7 @@ class Annotation < ActiveRecord::Base
     recipe.annotations.each do |annotation|
       range = (annotation.start_idx..annotation.end_idx)
       if range.include?(start_idx) || range.include?(end_idx)
-        record.errors[:range] << "Annotations cannot overlap"
+        errors.add(:range, "Annotations cannot overlap")
         return
       end
     end
