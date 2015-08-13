@@ -3,7 +3,7 @@ class Api::AnnotationsController < ApplicationController
     @annotation = current_user.annotations.new(annotation_params)
     if @annotation.save
       @recipe = @annotation.recipe
-      render "recipes/show"
+      render :show
     else
       render json: @annotation.errors.full_messages
     end
@@ -13,7 +13,7 @@ class Api::AnnotationsController < ApplicationController
     @annotation = Annotation.find(params[:id])
     @recipe = @annotation.recipe
     @annotation.try(:destroy)
-    render "recipes/show"
+    render :index
   end
 
   def show

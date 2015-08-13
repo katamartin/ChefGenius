@@ -47,7 +47,6 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       var start = t.getRangeAt(0).startOffset;
       var end = t.getRangeAt(0).endOffset;
       var range = this.model.fromDomString(domString, start, end);
-      debugger
       if (this.isValidRange(range[0], range[1])) {
         var annotation = new ChefGenius.Models.Annotation();
         annotation.set({"start_idx": range[0],

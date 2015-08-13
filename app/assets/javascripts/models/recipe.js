@@ -25,8 +25,8 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
   },
 
   toDomString: function(domString, trueStart, trueEnd) {
-    var newLinesBefore = domString.slice(0, trueStart).split('\n').length - 1;
-    var newLinesBetween = domString.slice(trueStart, trueEnd).split('\n').length - 1;
+    var newLinesBefore = this.get("body").slice(0, trueStart).split('\n').length - 1;
+    var newLinesBetween = this.get("body").slice(trueStart, trueEnd).split('\n').length - 1;
     var start = trueStart + 2 - newLinesBefore;
     var end = trueEnd + 2 - newLinesBetween - newLinesBefore;
     return [start, end];
