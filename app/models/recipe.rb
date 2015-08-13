@@ -9,4 +9,10 @@ class Recipe < ActiveRecord::Base
   )
 
   has_many :annotations, dependent: :destroy
+  has_many :taggings, dependent: :destroy
+  has_many(
+    :tags,
+    through: :taggings,
+    source: :tag
+  )
 end

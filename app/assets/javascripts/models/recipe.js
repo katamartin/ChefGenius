@@ -3,9 +3,17 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
 
   annotations: function() {
     if (!this._annotations) {
-      this._annotations = new ChefGenius.Collections.Annotations([], {recipe: this})
+      this._annotations = new ChefGenius.Collections.Annotations([], {recipe: this});
     }
     return this._annotations;
+  },
+
+  tags: function() {
+    if (!this._tags) {
+      this._tags = new ChefGenius.Collections.Tags([], {recipe: this});
+    }
+
+    return this._tags;
   },
 
   parse: function(response) {
@@ -13,6 +21,12 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
       this.annotations().set(response.annotations, {parse: true});
       delete response.annotations;
     }
+
+    if (response.tags) {
+      this.tags().set(response.tags, {parse: true});
+      delete response.tags;
+    }
+
     return response;
   },
 

@@ -7,7 +7,7 @@
 * Comment
 
 ### Controllers
-* Api::TagsController (create, show)
+* Api::TagsController (create, show, index)
 * Api::TaggingsController (create)
 * Api::CommentsController (create, destroy)
 
@@ -34,3 +34,4 @@
 
 
 ## Gems/Libraries
+* bootstrap-tokenfield

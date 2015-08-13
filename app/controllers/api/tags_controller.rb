@@ -9,8 +9,13 @@ class Api::TagsController < ApplicationController
   end
 
   def show
-    @tag = Tag.find_by(label: params[:tag])
+    @tag = Tag.find(params[:id])
     render :show
+  end
+
+  def index
+    @tags = Tag.all
+    render :index
   end
 
   private
