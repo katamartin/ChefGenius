@@ -1,2 +1,2 @@
-json.extract! @annotation, :body
+json.extract! @annotation, :body, :id
 json.author @annotation.author.email
