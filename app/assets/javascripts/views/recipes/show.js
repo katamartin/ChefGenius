@@ -1,7 +1,7 @@
 ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
-    // this.listenTo(this.model.annotations(), "add remove", this.render);
+    this.listenTo(this.model.annotations(), "add", this.attachAnnotationLink);
   },
 
   template: JST["recipes/show"],
@@ -29,7 +29,6 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
         valid = false;
       }
     });
-
     return valid;
   },
 
@@ -77,16 +76,30 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   attachAnnotationLinks: function() {
     var view = this;
     var body = view.$(".recipe-body").text();
-    var bodySplit = body.split("");
+    if (!body.trim()) { return; }
+    this.bodySplit = this.bodySplit || body.split("");
     this.model.annotations().each(function(annotation) {
-      var start = annotation.get("start_idx");
-      var end = annotation.get("end_idx");
-      var range = view.model.toDomString(body, start, end);
-      var id = annotation.get("id");
-      bodySplit[range[0]] = "<a href='javascript:void(0)' class='annotation' id='" + id + "'>" + bodySplit[range[0]];
-      bodySplit[range[1] - 1] = bodySplit[range[1] - 1] + "</a>";
+      view.addAnnotationLink(annotation, body);
     });
-    this.$(".recipe-body").html(bodySplit.join(""));
+    this.$(".recipe-body").html(this.bodySplit.join(""));
+  },
+
+  addAnnotationLink: function(annotation, domString) {
+    if (!domString.trim()) { return; }
+    var start = annotation.get("start_idx");
+    var end = annotation.get("end_idx");
+    var range = this.model.toDomString(domString, start, end);
+    var id = annotation.get("id");
+    var tag = "<a href='javascript:void(0)' class='annotation' id='" + id + "'>";
+    this.bodySplit[range[0]] = tag + this.bodySplit[range[0]];
+    this.bodySplit[range[1] - 1] = this.bodySplit[range[1] - 1] + "</a>";
+  },
+
+  attachAnnotationLink: function(annotation) {
+    var domString = this.$(".recipe-body").text()
+    if (!domString.trim()) { return; }
+    this.addAnnotationLink(annotation, domString);
+    this.$(".recipe-body").html(this.bodySplit.join(""));
   },
 
   getStartOffset: function(t) {
