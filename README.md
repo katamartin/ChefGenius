@@ -12,7 +12,7 @@ Backbone. Users can:
 - [x] Create accounts
 - [x] Create sessions (log in)
 - [x] Create recipes
-- [ ] Annotate recipes
+- [x] Annotate recipes
 - [ ] Tag recipes
 - [ ] View recipes by tag
 - [ ] Comment on recipes
