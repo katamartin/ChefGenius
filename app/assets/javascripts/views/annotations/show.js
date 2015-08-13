@@ -1,6 +1,8 @@
 ChefGenius.Views.AnnotationShow = Backbone.View.extend({
-  template: JST["show"],
+  template: JST["annotations/show"],
 
+  tagName: "pre",
+  
   className: "annotation-show",
 
   render: function() {

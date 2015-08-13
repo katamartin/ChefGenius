@@ -1,12 +1,14 @@
 ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
+    // this.listenTo(this.model.annotations(), "add remove", this.render);
   },
 
   template: JST["recipes/show"],
 
   events: {
-    "mouseup": "isTextSelected"
+    "mouseup .recipe-body": "isTextSelected",
+    "click .annotation": "addAnnotationView"
   },
 
   render: function() {
@@ -36,14 +38,24 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       model: annotation,
       collection: this.model.annotations()
     });
-    this.addSubview(".annotation-form", subview);
+    this.emptyContainer(".annotation-container");
+    this.addSubview(".annotation-container", subview);
+  },
+
+  isValidSelection: function(t) {
+    if (!(t.toString()) || t.toString().trim().length === 0) {
+      return false;
+    } else {
+      var containsAnnotation = !t.extentNode.isEqualNode(t.anchorNode);
+      var overlapsAnnotation = t.extentNode.parentNode.tagName !== "PRE";
+      return !(containsAnnotation || overlapsAnnotation);
+    }
   },
 
   isTextSelected: function(event) {
     event.preventDefault();
     var t = (document.all) ? document.selection.createRange().text : document.getSelection();
-    if (t.toString() && t.toString().trim().length > 0 &&
-        t.extentNode.parentNode.tagName === "PRE") {
+    if (this.isValidSelection(t)) {
       var selection = t.toLocaleString();
       var domString = t.anchorNode.parentNode.innerText;
       var start = this.getStartOffset(t);
@@ -57,6 +69,8 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
                       });
         this.addAnnotationFormView(annotation);
       }
+    } else {
+      this.emptyContainer(".annotation-container");
     }
   },
 
@@ -83,5 +97,21 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       node = node.nextSibling;
     }
     return t.getRangeAt(0).startOffset + count;
+  },
+
+  addAnnotationView: function(event) {
+    event.preventDefault();
+    var target = $(event.currentTarget);
+    var annotation = this.model.annotations().getOrFetch(target.attr("id"));
+    var subview = new ChefGenius.Views.AnnotationShow({model: annotation});
+    this.emptyContainer(".annotation-container");
+    this.addSubview(".annotation-container", subview);
+  },
+
+  emptyContainer: function(selector) {
+    this.$(selector).empty();
+    _(this.subviews(selector)).each(function(subview) {
+      subview.remove();
+    });
   }
 });

@@ -1,11 +1,12 @@
 <h1><%= recipe.escape("title") %></h1>
 <h2>Posted by <%= recipe.escape("author") %> </h2>
-
-<pre class="recipe-body">
+<a href="">Recipe Index</a>
+<br>
+<pre class="recipe-body col-md-6">
   <%= recipe.escape("body") %>
 </pre>
 
-<div class="annotation-form">
+<div class="annotation-container col-md-6">
 </div>
 
-<a href="">Recipe Index</a>
+<br>

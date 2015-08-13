@@ -16,7 +16,6 @@ ChefGenius.Collections.Recipes = Backbone.Collection.extend({
     } else {
       recipe.fetch();
     }
-
     return recipe;
   }
 });
