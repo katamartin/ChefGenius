@@ -6,12 +6,9 @@ window.ChefGenius = {
   initialize: function() {
     new ChefGenius.Routers.Router({
       $rootEl: $("#content"),
-      recipes: ChefGenius.Collections.recipes
+      recipes: ChefGenius.Collections.recipes,
+      tags: ChefGenius.Collections.tags
     });
     Backbone.history.start();
   }
 };
-
-// $(document).ready(function(){
-//   ChefGenius.initialize();
-// });

@@ -26,7 +26,6 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
       this.tags().set(response.tags, {parse: true});
       delete response.tags;
     }
-
     return response;
   },
 

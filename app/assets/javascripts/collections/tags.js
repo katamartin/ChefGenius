@@ -1,5 +1,22 @@
 ChefGenius.Collections.Tags = Backbone.Collection.extend({
   model: ChefGenius.Models.Tag,
 
-  url: "/api/tags"
+  url: "/api/tags",
+
+  getOrFetch: function(id) {
+    var tag = this.get(id);
+    if (!tag) {
+      tag = new ChefGenius.Models.Tag({id: id});
+      tag.fetch({
+        error: function() {
+          this.remove(tag);
+        }.bind(this)
+      });
+    } else {
+      tag.fetch();
+    }
+    return tag;
+  }
 });
+
+ChefGenius.Collections.tags = new ChefGenius.Collections.Tags();

@@ -1,6 +1,8 @@
 ChefGenius.Routers.Router = Backbone.Router.extend({
   initialize: function (options) {
     this.recipes = options.recipes;
+    this.tags = options.tags;
+    this.tags.fetch();
     this.$rootEl = options.$rootEl;
   },
 
@@ -8,7 +10,7 @@ ChefGenius.Routers.Router = Backbone.Router.extend({
     "": "recipesIndex",
     "recipes/new": "newRecipe",
     "recipes/:id": "showRecipe",
-    "tags/:label": "showTag"
+    "tags/:id": "showTag"
   },
 
   newRecipe: function() {
@@ -31,8 +33,10 @@ ChefGenius.Routers.Router = Backbone.Router.extend({
     this._swapView(view);
   },
 
-  showTag: function(label) {
-
+  showTag: function(id) {
+    var tag = this.tags.getOrFetch(id);
+    var view = new ChefGenius.Views.TagShow({model: tag});
+    this._swapView(view);
   },
 
   _swapView: function(view) {
