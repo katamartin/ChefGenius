@@ -42,10 +42,12 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   isTextSelected: function(event) {
     event.preventDefault();
     var t = (document.all) ? document.selection.createRange().text : document.getSelection();
-    if (t.toString() && t.toString().trim().length > 0) {
-      var domString = t.anchorNode.wholeText
-      var start = t.getRangeAt(0).startOffset;
-      var end = t.getRangeAt(0).endOffset;
+    if (t.toString() && t.toString().trim().length > 0 &&
+        t.extentNode.parentNode.tagName === "PRE") {
+      var selection = t.toLocaleString();
+      var domString = t.anchorNode.parentNode.innerText;
+      var start = this.getStartOffset(t);
+      var end = start + selection.length;
       var range = this.model.fromDomString(domString, start, end);
       if (this.isValidRange(range[0], range[1])) {
         var annotation = new ChefGenius.Models.Annotation();
@@ -71,5 +73,15 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       bodySplit[range[1] - 1] = bodySplit[range[1] - 1] + "</a>";
     });
     this.$(".recipe-body").html(bodySplit.join(""));
+  },
+
+  getStartOffset: function(t) {
+    var node = t.anchorNode.parentNode.firstChild;
+    var count = 0;
+    while (!node.isEqualNode(t.anchorNode)) {
+      count += node.textContent.length;
+      node = node.nextSibling;
+    }
+    return t.getRangeAt(0).startOffset + count;
   }
 });
