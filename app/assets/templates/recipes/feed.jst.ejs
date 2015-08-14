@@ -1,0 +1,9 @@
+<ul class="list-group">
+  <% recipes.each(function(recipe) { %>
+    <li class="list-group-item">
+      <a href="#/recipes/<%= recipe.get("id") %>">
+        <%=recipe.escape("title")%>
+      </a>
+    </li>
+  <%  }) %>
+</ul>

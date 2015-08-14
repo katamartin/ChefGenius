@@ -2,6 +2,7 @@ ChefGenius.Views.UserShow = Backbone.CompositeView.extend({
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
     this.addAnnotationFeed(this.model.annotations());
+    this.addRecipeFeed(this.model.recipes());
   },
 
   events: {
@@ -34,4 +35,11 @@ ChefGenius.Views.UserShow = Backbone.CompositeView.extend({
     });
     this.addSubview(".annotation-feed", subview);
   },
+
+  addRecipeFeed: function(recipes) {
+    var subview = new ChefGenius.Views.RecipeFeed({
+      collection: recipes
+    });
+    this.addSubview(".recipe-feed", subview);
+  }
 });

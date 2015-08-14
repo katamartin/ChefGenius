@@ -11,10 +11,24 @@ ChefGenius.Models.User = Backbone.Model.extend({
     return this._annotations;
   },
 
+  recipes: function() {
+    if (!this._recipes) {
+      this._recipes = new ChefGenius.Collections.Recipes(
+        [],
+        {author: this}
+      );
+    }
+    return this._recipes;
+  },
+
   parse: function(response) {
     if (response.annotations) {
       this.annotations().set(response.annotations, {parse: true});
       delete response.annotations;
+    }
+    if (response.recipes) {
+      this.recipes().set(response.recipes, {parse: true});
+      delete response.recipes;
     }
     return response;
   }
