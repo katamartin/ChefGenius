@@ -5,7 +5,6 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   after_initialize :ensure_session_token
-
   has_many(
     :recipes,
     class_name: :Recipe,
@@ -17,6 +16,14 @@ class User < ActiveRecord::Base
   has_many(
     :annotations,
     class_name: :Annotation,
+    foreign_key: :author_id,
+    primary_key: :id,
+    dependent: :destroy
+  )
+
+  has_many(
+    :comments,
+    class_name: :Comment,
     foreign_key: :author_id,
     primary_key: :id,
     dependent: :destroy
