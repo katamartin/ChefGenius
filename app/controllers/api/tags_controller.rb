@@ -9,7 +9,9 @@ class Api::TagsController < ApplicationController
   end
 
   def show
-    @tag = Tag.find(params[:id])
+    @tag = Tag.
+      includes(recipes: [:author]).
+      find(params[:id])
     render :show
   end
 
