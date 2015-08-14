@@ -14,6 +14,7 @@
 ### Views
 * tags/index.json.jbuilder
 * tags/show.json.jbuilder
+* comments/show.json.jbuilder
 
 ## Backbone
 ### Models
