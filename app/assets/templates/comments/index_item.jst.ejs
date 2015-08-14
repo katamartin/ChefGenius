@@ -1,4 +1,4 @@
 <pre>
-  <b><%= comment.escape("author") %></b>
+  <b><a href="#/users/<%= comment.escape("author_id") %>"><%= comment.escape("author") %></a></b>
   <%= comment.escape("body") %>
 </pre>
