@@ -59632,3 +59632,551 @@ Processing by Api::RecipesController#index as JSON
   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
   Rendered api/recipes/index.json.jbuilder (14.8ms)
 Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-13 21:49:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RootController#root as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "v9JHdzUrCDdAg4g3MzCclg"]]
+  [1m[36mTag Load (3.5ms)[0m  [1mSELECT  tags.*, COUNT(recipes.id) AS recipes_count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" INNER JOIN "recipes" ON "recipes"."id" = "taggings"."recipe_id" GROUP BY tags.id  ORDER BY recipes_count DESC LIMIT 5[0m
+  Rendered root/_nav.html.erb (50.1ms)
+  Rendered root/root.html.erb within layouts/application (56.0ms)
+  Rendered layouts/_errors.html.erb (0.7ms)
+Completed 200 OK in 810ms (Views: 740.8ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/assets/api/annotations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/api/taggings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/api/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/root.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/api/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/application.self-50a40d6155344b8ef3f5ad0c1e67ff1531c2abadf1dd4d5dee6366be4efc45ee.css?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/underscore.self-b84a7a5ac0e8afc4f176b95606590bfc56044eeae9286097bdee013a6909fde5.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/backbone.self-0977290d5e68ce40d516cd4dc3965586680024e51399f0ee54ee8ed3a99b1506.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/bootstrap_tokenfield.self-7e14770235111a5686aafdf9822c3792b598bbd93f8334a183f28dd5ddfa2bfe.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/utils/composite_view.self-ae3948e953312d3e050f4baf312fdaea87b998a104d2eece8f5b81287ad1a4f7.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/chef_genius.self-e5105cd672a7d6fd1505a24edeee0601cb37549d9d5d36f63db7b9054ed18838.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/jquery_serializeJSON.self-c480e85ec7f2b02efd59ab693b310ece9aaac9ce35b2b7f9fc817a27d5ee0a79.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/annotations/form.self-1497407e1bd46ca3534982ea71291f8179b41c83fa1ce3c04aacc1d51195ed16.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/annotations/show.self-175897a28e383ca3c73a4abae8a3771a20b24634e1a1115785df8307e2060e63.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/recipes/form.self-d1558be591eb77faacc9b528a831585824ccc47844426061dfa1f3d8f3b290fb.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/recipes/index.self-83f8265d3212c39cdf718f9c6888a19779ea45f75003d678b8980975f62ee5d9.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/recipes/index_item.self-613288c0b65ee1ef10b96e8d0a2ef5e8797f9fe3032610c60b03e0bda8d26f6e.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/recipes/show.self-f3c058725991900655e548101bfe2d22f2dcd68c315d49a135dda6fa4dc2c353.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/tags/show.self-47e691db054fdd6e3a2b22a8408df2e2f1efabb0b3953cf0eae052632b035629.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/models/annotation.self-daaf79cb88fcf8a22301632dc96a45ea030a461096b0fba590d9884311208d99.js?body=1" for ::1 at 2015-08-13 21:49:44 -0700
+
+
+Started GET "/assets/models/comment.self-063bc66bc747d95f2786742a3998f086d96864a278c136cc99f98465071d139d.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/models/recipe.self-95ab910097edd8e92691d4ab1a1844115c527f76f59c2c6acb0a75ba616ad9cb.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/models/tag.self-6518c6f68d0b352a2114b487e3abf8326379ef71cdc24d6872aa7ac7331763b8.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/collections/annotations.self-2f415fa96810175bd925578da232b7dbc9c76ce908713f2a92e9d96d2cc6baa2.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/collections/comments.self-683341c5885df9c008dfee3f1fc28c90797bf73da6668b4881f6f3a97e9a6660.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/collections/recipes.self-fa2f5aacbcce550e19ec1a6145eb29b8b637e0bd498cd436e5c27d41c914b48e.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/collections/tags.self-35a653db25b8d07c7da6e0528023ac37c6df3b0727a15a4657bc8f205466cb37.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/views/annotations/form.self-d80517887866a5433b2fd75f2f78c6ab16d0b0115bb7727313c8646e76c07430.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/views/annotations/show.self-1a0cfb0b2b7a86229580417318395694b7a2d79026eaa1e0d25a12db6be3df34.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/views/recipes/form.self-d246592450b9a83ab5d32c95796f6aa6ad115d07aa2264669c22fc16bff734db.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/views/recipes/index.self-dfa91213325c57ed1a2019d49b4b79ddc717f90193d841c3c7145a2ce3ac7dd5.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/views/recipes/index_item.self-6e65d6f666493a5f5f2b8163b4175fc9b051e74c5a50609e9b67496de5b0a443.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/views/recipes/show.self-c56c07f701904741f5580acec663b3a5bb3bbfbb41b433e8c55e7e2d0347ed97.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/views/tags/show.self-2bd014213c3378d4f9fe18bdfa3be1ea1555be1b18362e531af6051e1e0cd673.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/api/annotations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/routers/router.self-534ba598d9fc9dd65032166decb4b7e949f0538dd070c4b72190edea34df7243.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/api/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/api/taggings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/api/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/root.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/assets/application.self-e5d5cca64271c4c8ebd7d72a4e34c6eb16e8f036b14a575d09fa3fbb5df6f25e.js?body=1" for ::1 at 2015-08-13 21:49:45 -0700
+
+
+Started GET "/api/tags" for ::1 at 2015-08-13 21:49:45 -0700
+Processing by Api::TagsController#index as JSON
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mTagging Load (0.3ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 1]]
+  [1m[35mTagging Load (1.5ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1  [["tag_id", 2]]
+  [1m[36mTagging Load (0.5ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 3]]
+  [1m[35mTagging Load (0.5ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1  [["tag_id", 4]]
+  Rendered api/tags/index.json.jbuilder (39.9ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:49:45 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (15.5ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/recipes/3" for ::1 at 2015-08-13 21:49:52 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (1.8ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 3]]
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 3]]
+  Rendered api/recipes/show.json.jbuilder (59.3ms)
+Completed 200 OK in 67ms (Views: 52.5ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/api/annotations/1" for ::1 at 2015-08-13 21:49:54 -0700
+Processing by Api::AnnotationsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.4ms)[0m  [1mSELECT  "annotations".* FROM "annotations" WHERE "annotations"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/annotations/show.json.jbuilder (3.2ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/annotations/3" for ::1 at 2015-08-13 21:49:56 -0700
+Processing by Api::AnnotationsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mAnnotation Load (0.3ms)[0m  [1mSELECT  "annotations".* FROM "annotations" WHERE "annotations"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/annotations/show.json.jbuilder (1.8ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/annotations/8" for ::1 at 2015-08-13 21:49:57 -0700
+Processing by Api::AnnotationsController#show as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mAnnotation Load (0.4ms)[0m  [1mSELECT  "annotations".* FROM "annotations" WHERE "annotations"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/annotations/show.json.jbuilder (2.8ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/annotations" for ::1 at 2015-08-13 21:50:13 -0700
+Processing by Api::AnnotationsController#create as JSON
+  Parameters: {"start_idx"=>957, "end_idx"=>973, "recipe_id"=>3, "top"=>485, "body"=>"demo annotation", "annotation"=>{"recipe_id"=>3, "body"=>"demo annotation", "start_idx"=>957, "end_idx"=>973}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "v9JHdzUrCDdAg4g3MzCclg"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mRecipe Load (0.3ms)[0m  SELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mAnnotation Load (0.3ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 3]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "annotations" ("recipe_id", "start_idx", "end_idx", "body", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["recipe_id", 3], ["start_idx", 957], ["end_idx", 973], ["body", "demo annotation"], ["author_id", 1], ["created_at", "2015-08-14 04:50:13.609840"], ["updated_at", "2015-08-14 04:50:13.609840"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered api/annotations/show.json.jbuilder (0.3ms)
+Completed 200 OK in 19ms (Views: 1.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/annotations/17" for ::1 at 2015-08-13 21:50:15 -0700
+Processing by Api::AnnotationsController#show as JSON
+  Parameters: {"id"=>"17"}
+  [1m[35mAnnotation Load (0.3ms)[0m  SELECT  "annotations".* FROM "annotations" WHERE "annotations"."id" = $1 LIMIT 1  [["id", 17]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/annotations/show.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-13 21:50:18 -0700
+Processing by RootController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "v9JHdzUrCDdAg4g3MzCclg"]]
+  [1m[36mTag Load (1.1ms)[0m  [1mSELECT  tags.*, COUNT(recipes.id) AS recipes_count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" INNER JOIN "recipes" ON "recipes"."id" = "taggings"."recipe_id" GROUP BY tags.id  ORDER BY recipes_count DESC LIMIT 5[0m
+  Rendered root/_nav.html.erb (3.5ms)
+  Rendered root/root.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_errors.html.erb (0.2ms)
+Completed 200 OK in 157ms (Views: 154.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/tags" for ::1 at 2015-08-13 21:50:19 -0700
+Processing by Api::TagsController#index as JSON
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags"
+  [1m[36mTagging Load (0.3ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 1]]
+  [1m[35mTagging Load (0.3ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1  [["tag_id", 2]]
+  [1m[36mTagging Load (0.4ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 3]]
+  [1m[35mTagging Load (0.2ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1  [["tag_id", 4]]
+  Rendered api/tags/index.json.jbuilder (8.3ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:50:19 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (7.9ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/recipes/7" for ::1 at 2015-08-13 21:50:20 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (1.6ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (1.4ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  [1m[35mTag Load (0.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 7]]
+  Rendered api/recipes/show.json.jbuilder (8.4ms)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/api/tags/1" for ::1 at 2015-08-13 21:50:22 -0700
+Processing by Api::TagsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mTag Load (1.6ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mRecipe Load (1.2ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "taggings" ON "recipes"."id" = "taggings"."recipe_id" WHERE "taggings"."tag_id" = $1  [["tag_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/tags/show.json.jbuilder (9.4ms)
+Completed 200 OK in 23ms (Views: 15.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/recipes/7" for ::1 at 2015-08-13 21:50:23 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[35mRecipe Load (1.7ms)[0m  SELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnnotation Load (1.2ms)[0m  SELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1  [["recipe_id", 7]]
+  [1m[36mTag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  Rendered api/recipes/show.json.jbuilder (12.5ms)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/tags/1" for ::1 at 2015-08-13 21:50:24 -0700
+Processing by Api::TagsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mTag Load (4.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRecipe Load (1.1ms)[0m  [1mSELECT "recipes".* FROM "recipes" INNER JOIN "taggings" ON "recipes"."id" = "taggings"."recipe_id" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/tags/show.json.jbuilder (13.5ms)
+Completed 200 OK in 30ms (Views: 19.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/api/recipes/7" for ::1 at 2015-08-13 21:50:24 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (2.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (5.6ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  [1m[35mTag Load (2.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 7]]
+  Rendered api/recipes/show.json.jbuilder (32.6ms)
+Completed 200 OK in 48ms (Views: 30.4ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/api/tags/2" for ::1 at 2015-08-13 21:50:25 -0700
+Processing by Api::TagsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mRecipe Load (0.9ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "taggings" ON "recipes"."id" = "taggings"."recipe_id" WHERE "taggings"."tag_id" = $1  [["tag_id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/tags/show.json.jbuilder (7.8ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/tags/3" for ::1 at 2015-08-13 21:50:31 -0700
+Processing by Api::TagsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mTag Load (0.9ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mRecipe Load (1.2ms)[0m  SELECT "recipes".* FROM "recipes" INNER JOIN "taggings" ON "recipes"."id" = "taggings"."recipe_id" WHERE "taggings"."tag_id" = $1  [["tag_id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/tags/show.json.jbuilder (9.3ms)
+Completed 200 OK in 17ms (Views: 10.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:50:44 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[36mRecipe Load (2.1ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (19.9ms)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/recipes/7" for ::1 at 2015-08-13 21:50:55 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (1.1ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (1.2ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 7]]
+  Rendered api/recipes/show.json.jbuilder (12.7ms)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:50:56 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[36mRecipe Load (2.0ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (64.2ms)
+Completed 200 OK in 86ms (Views: 78.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/recipes/2" for ::1 at 2015-08-13 21:51:30 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (0.2ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 2]]
+  [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 2]]
+  Rendered api/recipes/show.json.jbuilder (5.2ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:51:30 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[36mRecipe Load (2.4ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (95.0ms)
+Completed 200 OK in 107ms (Views: 99.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/recipes/7" for ::1 at 2015-08-13 21:51:32 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (2.0ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 7]]
+  [1m[35mTag Load (1.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 7]]
+  Rendered api/recipes/show.json.jbuilder (11.3ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:51:34 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[36mRecipe Load (9.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mUser Load (6.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (67.2ms)
+Completed 200 OK in 80ms (Views: 61.0ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/api/recipes/3" for ::1 at 2015-08-13 21:51:37 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (0.4ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 3]]
+  [1m[35mTag Load (1.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 3]]
+  Rendered api/recipes/show.json.jbuilder (15.9ms)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/annotations/5" for ::1 at 2015-08-13 21:51:42 -0700
+Processing by Api::AnnotationsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mAnnotation Load (0.8ms)[0m  [1mSELECT  "annotations".* FROM "annotations" WHERE "annotations"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/annotations/show.json.jbuilder (3.4ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:52:49 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[36mRecipe Load (1.3ms)[0m  [1mSELECT "recipes".* FROM "recipes"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (19.1ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/recipes/3" for ::1 at 2015-08-13 21:53:01 -0700
+Processing by Api::RecipesController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnnotation Load (2.7ms)[0m  [1mSELECT "annotations".* FROM "annotations" WHERE "annotations"."recipe_id" = $1[0m  [["recipe_id", 3]]
+  [1m[35mTag Load (0.8ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."recipe_id" = $1  [["recipe_id", 3]]
+  Rendered api/recipes/show.json.jbuilder (14.4ms)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-13 21:55:07 -0700
+Processing by RootController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "v9JHdzUrCDdAg4g3MzCclg"]]
+  [1m[35mTag Load (1.6ms)[0m  SELECT  tags.*, COUNT(recipes.id) AS recipes_count FROM "tags" INNER JOIN "taggings" ON "taggings"."tag_id" = "tags"."id" INNER JOIN "recipes" ON "recipes"."id" = "taggings"."recipe_id" GROUP BY tags.id  ORDER BY recipes_count DESC LIMIT 5
+  Rendered root/_nav.html.erb (3.8ms)
+  Rendered root/root.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_errors.html.erb (0.2ms)
+Completed 200 OK in 140ms (Views: 137.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/tags" for ::1 at 2015-08-13 21:55:07 -0700
+Processing by Api::TagsController#index as JSON
+  [1m[36mTag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  [1m[35mTagging Load (0.2ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1  [["tag_id", 1]]
+  [1m[36mTagging Load (0.2ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 2]]
+  [1m[35mTagging Load (0.2ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1  [["tag_id", 3]]
+  [1m[36mTagging Load (0.2ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."tag_id" = $1[0m  [["tag_id", 4]]
+  Rendered api/tags/index.json.jbuilder (5.4ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:55:07 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[35mRecipe Load (0.5ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (5.8ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:55:14 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[35mRecipe Load (2.2ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (30.9ms)
+Completed 200 OK in 41ms (Views: 35.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/recipes" for ::1 at 2015-08-13 21:58:23 -0700
+Processing by Api::RecipesController#index as JSON
+  [1m[35mRecipe Load (2.0ms)[0m  SELECT "recipes".* FROM "recipes"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered api/recipes/index.json.jbuilder (15.2ms)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 3.0ms)
