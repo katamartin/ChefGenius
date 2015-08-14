@@ -10,6 +10,7 @@ class Recipe < ActiveRecord::Base
 
   has_many :annotations, dependent: :destroy
   has_many :taggings, dependent: :destroy
+  has_many :comments, as: :commentable
   has_many(
     :tags,
     through: :taggings,

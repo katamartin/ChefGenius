@@ -11,6 +11,8 @@ class Annotation < ActiveRecord::Base
 
   belongs_to :recipe
 
+  has_many :comments, as: :commentable
+
   def non_overlapping
     recipe.annotations.each do |annotation|
       range = (annotation.start_idx..annotation.end_idx)

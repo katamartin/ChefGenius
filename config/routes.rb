@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     resources :recipes, only: [:index, :create, :show]
     resources :annotations, only: [:create, :destroy, :show]
     resources :tags, only: [:create, :show, :index]
+    resources :comments, only: [:create]
   end
 end
