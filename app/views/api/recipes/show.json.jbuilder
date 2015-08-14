@@ -2,7 +2,7 @@ json.extract! @recipe, :title, :body, :image_url, :id
 json.author @recipe.author.email
 json.annotations @recipe.annotations, :id, :body, :start_idx, :end_idx
 json.tags @recipe.tags, :label, :id
-json.commments @recipe.comments do |comment|
+json.comments @recipe.comments do |comment|
   json.id comment.id
   json.body comment.body
   json.author comment.author.email
