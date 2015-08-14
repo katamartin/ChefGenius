@@ -20,6 +20,21 @@
   width: 50%;
 }
 
+.user-information {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+}
+
+.user-activity {
+  float: right;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
 // .annotation-form {
 //   position: absolute;
 // }

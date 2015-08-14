@@ -7,7 +7,8 @@ window.ChefGenius = {
     new ChefGenius.Routers.Router({
       $rootEl: $("#content"),
       recipes: ChefGenius.Collections.recipes,
-      tags: ChefGenius.Collections.tags
+      tags: ChefGenius.Collections.tags,
+      users: ChefGenius.Collections.users
     });
     Backbone.history.start();
   }

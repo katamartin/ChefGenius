@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     resources :annotations, only: [:create, :destroy, :show]
     resources :tags, only: [:create, :show, :index]
     resources :comments, only: [:create]
+    resources :users, only: [:show]
   end
 end
