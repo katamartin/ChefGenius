@@ -44,7 +44,10 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
 
   addCommentFormView: function() {
     var comment = new ChefGenius.Models.Comment();
-    comment.set({"recipe_id": this.model.get("id")});
+    comment.set({
+      "commentable_id": this.model.get("id"),
+      "commentable_type": "Recipe"
+    });
     var subview = new ChefGenius.Views.CommentForm({
       model: comment,
       collection: this.model.comments()

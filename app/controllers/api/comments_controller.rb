@@ -2,8 +2,7 @@ class Api::CommentsController < ApplicationController
   def create
     @comment = current_user.comments.new(comment_params)
     if @comment.save
-      @recipe = @comment.recipe
-      render :show
+      render json: @comment
     else
       render json: @comment.errors.full_messages
     end
@@ -11,6 +10,6 @@ class Api::CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:recipe_id, :body)
+    params.require(:comment).permit(:commentable_id, :commentable_type, :body)
   end
 end
