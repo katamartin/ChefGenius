@@ -8,11 +8,15 @@ json.annotations @user.annotations do |annotation|
   json.recipe do
     json.id annotation.recipe.id
     json.title annotation.recipe.title
+    json.body annotation.recipe.body
     json.author do
       json.email annotation.recipe.author.email
       json.id annotation.recipe.author.id
     end
   end
+  json.body annotation.body
+  json.start_idx annotation.start_idx
+  json.end_idx annotation.end_idx
   json.date annotation.created_at
 end
 
