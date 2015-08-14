@@ -19,7 +19,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     return this;
   },
 
-  isValidRange(start, end) {
+  isValidRange: function(start, end) {
     var valid = true;
     this.model.annotations().each(function(annotation){
       var start_idx = annotation.get("start_idx");
