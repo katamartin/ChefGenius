@@ -80,7 +80,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       var start = this.getStartOffset(t);
       var end = start + selection.length;
       var range = this.model.fromDomString(domString, start, end);
-      var top = t.getRangeAt(0).getClientRects().item(0).top;
+      var top = event.offsetY;
       if (this.isValidRange(range[0], range[1])) {
         var annotation = new ChefGenius.Models.Annotation();
         annotation.set({"start_idx": range[0],
@@ -138,6 +138,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     event.preventDefault();
     var target = $(event.currentTarget);
     var annotation = this.model.annotations().getOrFetch(target.attr("id"));
+    annotation.set("top", target.offset().top - $(".recipe-column").offset().top);
     var subview = new ChefGenius.Views.AnnotationShow({model: annotation});
     this.emptyContainer(".annotation-container");
     this.addSubview(".annotation-container", subview);

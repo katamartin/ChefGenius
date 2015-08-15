@@ -3,6 +3,8 @@ ChefGenius.Views.AnnotationForm = Backbone.View.extend({
 
   tagName: "form",
 
+  className: "annotation-form",
+
   events: {
     "click button": "save"
   },
@@ -10,6 +12,9 @@ ChefGenius.Views.AnnotationForm = Backbone.View.extend({
   render: function() {
     var content = this.template({annotation: this.model});
     this.$el.html(content);
+    this.$el.css({
+      'top': this.model.get("top"),
+    });
     return this;
   },
 

@@ -35,10 +35,17 @@
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-// .annotation-form {
-//   position: absolute;
-// }
+.annotation-form {
+  position: absolute;
+}
 
+.annotation-container {
+  position: relative;
+}
+
+.annotation-show {
+  position: absolute;
+}
 .recipe-index-item {
   float: left;
   padding: 10px;
@@ -58,6 +65,18 @@
   display: block;
 }
 
+.recipe-feed li {
+  border-left: none;
+  border-right: none;
+}
+
+.recipe-feed li:first-child {
+  border-top: none;
+}
+
+.recipe-feed li:last-child {
+  border-bottom: none;
+}
 /*!
  * bootstrap-tokenfield
  * https://github.com/sliptree/bootstrap-tokenfield
