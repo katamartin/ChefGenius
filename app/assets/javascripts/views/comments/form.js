@@ -20,7 +20,11 @@ ChefGenius.Views.CommentForm = Backbone.View.extend({
     this.model.save({}, {
       success: function() {
         this.collection.add(this.model, {merge: true});
-        this.model = new ChefGenius.Models.Comment();
+        this.model = new ChefGenius.Models.Comment({
+          "commentable_id": this.model.get("commentable_id"),
+          "commentable_type": this.model.get("commentable_type"),
+          "voteCount": 0
+        });
         this.render();
       }.bind(this)
     });

@@ -52,7 +52,8 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     var comment = new ChefGenius.Models.Comment();
     comment.set({
       "commentable_id": this.model.get("id"),
-      "commentable_type": "Recipe"
+      "commentable_type": "Recipe",
+      "voteCount": 0
     });
     var subview = new ChefGenius.Views.CommentForm({
       model: comment,

@@ -20,6 +20,7 @@ ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
   },
 
   upvote: function() {
+    debugger
     if (this.model.isVotedOn() && this.model.vote().get("value") === -1) {
       this.model.vote().save({
         votable_id: this.model.id,

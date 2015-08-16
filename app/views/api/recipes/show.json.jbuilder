@@ -3,7 +3,7 @@ json.author @recipe.author.email
 json.author_id @recipe.author.id
 json.annotations @recipe.annotations do |annotation|
   json.extract! annotation, :id, :body, :start_idx, :end_idx
-  json.vote_count annotation.vote_count
+  json.voteCount annotation.vote_count
   vote = annotation.votes.find_by(user_id: current_user.id)
   if vote
     json.vote do

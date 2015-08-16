@@ -6,15 +6,14 @@ ChefGenius.Views.AnnotationShow = Backbone.CompositeView.extend({
 
   template: JST["annotations/show"],
 
-  // tagName: "pre",
-
   className: "annotation-show",
 
   addCommentFormView: function() {
     var comment = new ChefGenius.Models.Comment();
     comment.set({
       "commentable_id": this.model.get("id"),
-      "commentable_type": "Annotation"
+      "commentable_type": "Annotation",
+      "voteCount": 0
     });
     var subview = new ChefGenius.Views.CommentForm({
       model: comment,
