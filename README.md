@@ -17,7 +17,7 @@ Backbone. Users can:
 - [x] View recipes by tag
 - [x] Comment on recipes
 - [x] View users' activity
-- [ ] Reply to annotations
+- [x] Reply to annotations
 - [ ] Vote on annotations and replies
 - [ ] Search for recipes
 - [ ] Edit annotations

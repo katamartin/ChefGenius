@@ -22,7 +22,6 @@ end
 
 json.comments @user.comments do |comment|
   json.commentable do
-    json.title comment.commentable.title
     json.type comment.commentable_type
     json.id comment.commentable_id
     json.author do
