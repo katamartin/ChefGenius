@@ -37,7 +37,7 @@
                       aria-haspopup="true"
                       aria-expanded="false"><%= current_user.email %> <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">View Profile </a></li>
+            <li><a href="#/users/<%= current_user.id %>">View Profile </a></li>
             <li><a href="#">Settings </a></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "Sign Out ", session_url, method: :delete %></li>
