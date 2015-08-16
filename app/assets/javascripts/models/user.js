@@ -21,6 +21,16 @@ ChefGenius.Models.User = Backbone.Model.extend({
     return this._recipes;
   },
 
+  comments: function() {
+    if (!this._comments) {
+      this._comments = new ChefGenius.Collections.Comments(
+        [],
+        {author: this}
+      );
+    }
+    return this._comments;
+  },
+
   parse: function(response) {
     if (response.annotations) {
       this.annotations().set(response.annotations, {parse: true});
@@ -29,6 +39,10 @@ ChefGenius.Models.User = Backbone.Model.extend({
     if (response.recipes) {
       this.recipes().set(response.recipes, {parse: true});
       delete response.recipes;
+    }
+    if (response.comments) {
+      this.comments().set(response.comments, {parse: true});
+      delete response.comments;
     }
     return response;
   }

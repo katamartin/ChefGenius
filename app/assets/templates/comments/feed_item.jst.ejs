@@ -1,0 +1,19 @@
+<% if (comment.commentable === "recipe") { %>
+  <% var recipe = comment.recipe() %>
+  <% var id = recipe.get("id") %>
+  <a href="#/recipes/<%= recipe.get("id") %>"><%= recipe.escape("title") %></a>
+<% } else { %>
+  <% var annotation = comment.annotation() %>
+  <% var start_idx = annotation.escape("start_idx") %>
+  <% var end_idx = annotation.escape("end_idx") %>
+  <% var recipe = annotation.recipe() %>
+  <blockquote>
+    <p><%= recipe.get("body").slice(start_idx, end_idx) %></p>
+    <footer>
+      <a href="#/recipes/<%= recipe.get("id") %>"><%= recipe.escape("title") %></a>
+    </footer>
+  </blockquote>
+<% } %>
+<pre>
+  <%= comment.escape("body") %>
+</pre>
