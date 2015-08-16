@@ -77,6 +77,10 @@
 .recipe-feed li:last-child {
   border-bottom: none;
 }
+
+.glyphicon-thumbs-down {
+  transform: scaleX(-1);
+}
 /*!
  * bootstrap-tokenfield
  * https://github.com/sliptree/bootstrap-tokenfield

@@ -16,4 +16,11 @@ class Recipe < ActiveRecord::Base
     through: :taggings,
     source: :tag
   )
+
+  has_one(
+    :recipe,
+    class_name: :Recipe,
+    foreign_key: :id,
+    primary_key: :id
+  )
 end

@@ -20,7 +20,12 @@ class Api::RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.
-      includes(:author, :tags ,annotations: [comments: [:author]], comments: [:author]).
+      includes(
+        :author,
+        :tags,
+        annotations: [:votes, comments: [:votes, :author]],
+        comments: [:votes, :author]
+      ).
       find(params[:id])
     render :show
   end

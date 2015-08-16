@@ -28,6 +28,7 @@ class User < ActiveRecord::Base
     primary_key: :id,
     dependent: :destroy
   )
+  has_many :votes, dependent: :destroy
 
   def self.find_by_credentials(email, password)
     user = self.find_by(email: email)

@@ -12,6 +12,8 @@ class Annotation < ActiveRecord::Base
   belongs_to :recipe
 
   has_many :comments, as: :commentable
+  has_many :votes, as: :votable
+  has_many :voters, through: :votes, source: :user
 
   def non_overlapping
     recipe.annotations.each do |annotation|
@@ -21,5 +23,9 @@ class Annotation < ActiveRecord::Base
         return
       end
     end
+  end
+
+  def vote_count
+    votes.inject { |accum, el| accum + el }
   end
 end

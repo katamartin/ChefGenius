@@ -1,4 +1,5 @@
 <pre>
   <b><a href="#/users/<%= comment.escape("author_id") %>"><%= comment.escape("author") %></a></b>
   <%= comment.escape("body") %>
+  <a class="upvote" aria-label="upvote" href="javascript:void(0)"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a> <%= comment.get("voteCount") %> <a class="downvote" aria-label="downvote" href="javascript:void(0)"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></a>
 </pre>

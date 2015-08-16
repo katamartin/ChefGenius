@@ -58,4 +58,4 @@ id           | integer   | not null, primary key
 author_id    | integer   | not null, foreign_key (references user)
 votable_id   | integer   | not null, foreign_key (references votable)
 votable_type | string    | not null
-vote         | string    |
+vote         | value     | not null

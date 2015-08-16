@@ -4,7 +4,7 @@ class Api::UsersController < ApplicationController
       includes(
         :recipes,
         annotations: [recipe: [:author]],
-        comments: [:commentable, :author]
+        comments: [commentable: [:recipe, :author]]
       ).
       find(params[:id])
     render :show

@@ -15,6 +15,17 @@ ChefGenius.Models.Comment = Backbone.Model.extend({
     return this._annotation;
   },
 
+  vote: function() {
+    if (!this._vote) {
+      this._vote = new ChefGenius.Models.Vote();
+    }
+    return this._vote;
+  },
+
+  isVotedOn: function() {
+    return !this.vote().isNew();
+  },
+
   parse: function(response) {
     if (response.annotation) {
       this.commentable = "annotation";
@@ -26,6 +37,10 @@ ChefGenius.Models.Comment = Backbone.Model.extend({
       this.commentable = "recipe";
       this.recipe().set(response.recipe, {parse: true});
       delete response.recipe;
+    }
+    if (response.vote) {
+      this.vote().set(response.vote, {parse: true});
+      delete response.vote;
     }
     return response;
   }
