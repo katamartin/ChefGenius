@@ -13,15 +13,11 @@
 
 ## Backbone
 ### Models
+* Vote
 
 ### Collections
 
 ### Views
-* SearchShow (composite view, contains BlogsIndex and PostsIndex subviews)
-* AnnotationShow (extend composite view to contain VoteForm and Reply subviews)
-* ReplyForm
-* ReplyIndex (composite view, contains ReplyIndexItem subview)
-* ReplyIndexItem (composite view, contains VoteForm subview)
-* VoteForm
+* AnnotationShow (extend composite view to contain and Comment subviews)
 
 ## Gems/Libraries
