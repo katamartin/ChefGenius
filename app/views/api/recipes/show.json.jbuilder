@@ -4,7 +4,7 @@ json.author_id @recipe.author.id
 json.annotations @recipe.annotations do |annotation|
   json.extract! annotation, :id, :body, :start_idx, :end_idx
   json.voteCount annotation.vote_count
-  vote = annotation.votes.find_by(user_id: current_user.id)
+  vote = annotation.votes.select { |vote| vote.user_id == current_user.id }[0]
   if vote
     json.vote do
       json.extract! vote, :id, :value
@@ -16,7 +16,7 @@ json.annotations @recipe.annotations do |annotation|
     json.author comment.author.email
     json.author_id comment.author.id
     json.voteCount comment.vote_count
-    vote = comment.votes.find_by(user_id: current_user.id)
+    vote = comment.votes.select { |vote| vote.user_id == current_user.id }[0]
     if vote
       json.vote do
         json.extract! vote, :id, :value
@@ -31,7 +31,7 @@ json.comments @recipe.comments do |comment|
   json.author comment.author.email
   json.author_id comment.author.id
   json.voteCount comment.vote_count
-  vote = comment.votes.find_by(user_id: current_user.id)
+  vote = comment.votes.select { |vote| vote.user_id == current_user.id }[0]
   if vote
     json.vote do
       json.extract! vote, :id, :value

@@ -16,6 +16,18 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+.welcome {
+  background-image: url(https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?q=80&fm=jpg&s=79cda1064d9829ad3cadbf437e6c55e0);
+  background-size: 100%;
+  color: white;
+  height: 500px;
+}
+
+.welcome-content {
+  position: absolute;
+  top: 35%;
+}
+
 .user-form  {
   width: 50%;
 }
@@ -85,7 +97,9 @@
 }
 
 a.voted {
-  color: red;
+  pointer-events: none;
+  cursor: default;
+  color: gray;
 }
 /*!
  * bootstrap-tokenfield
