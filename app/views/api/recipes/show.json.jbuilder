@@ -7,7 +7,7 @@ json.annotations @recipe.annotations do |annotation|
   vote = annotation.votes.find_by(user_id: current_user.id)
   if vote
     json.vote do
-      json.extract! vote, :id
+      json.extract! vote, :id, :value
     end
   end
   json.comments annotation.comments do |comment|

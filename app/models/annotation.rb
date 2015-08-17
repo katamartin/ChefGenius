@@ -26,6 +26,6 @@ class Annotation < ActiveRecord::Base
   end
 
   def vote_count
-    votes.inject(0) { |accum, el| accum + el }
+    votes.inject(0) { |accum, el| accum + el.value }
   end
 end

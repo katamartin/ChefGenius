@@ -87,7 +87,8 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
         annotation.set({"start_idx": range[0],
                         "end_idx": range[1],
                         "recipe_id": this.model.get("id"),
-                        "top": top
+                        "top": top,
+                        "voteCount": 0
                       });
         this.addAnnotationFormView(annotation);
       }

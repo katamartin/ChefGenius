@@ -15,11 +15,11 @@ ChefGenius.Models.Annotation = Backbone.Model.extend({
     return this._comments;
   },
 
-  votes: function() {
-    if (!this._votes) {
-      this._votes = new ChefGenius.Collections.Votes([], {annotation: this});
+  vote: function() {
+    if (!this._vote) {
+      this._vote = new ChefGenius.Models.Vote();
     }
-    return this._votes;
+    return this._vote;
   },
 
   isVotedOn: function() {
@@ -35,9 +35,9 @@ ChefGenius.Models.Annotation = Backbone.Model.extend({
       this.comments().set(response.comments, {parse: true});
       delete response.comments;
     }
-    if (response.votes) {
-      this.votes().set(response.votes, {parse: true});
-      delete response.votes;
+    if (response.vote) {
+      this.vote().set(response.vote, {parse: true});
+      delete response.vote;
     }
     return response;
   }

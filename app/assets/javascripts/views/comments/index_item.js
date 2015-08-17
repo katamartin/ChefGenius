@@ -1,6 +1,6 @@
 ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
   initialize: function() {
-    this.listenTo(this.model, 'sync change:numLikes', this.render);
+    this.listenTo(this.model, 'sync change:voteCount', this.render);
     this.listenTo(this.model.vote(), 'change', this.render);
   },
 
@@ -20,7 +20,6 @@ ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
   },
 
   upvote: function() {
-    debugger
     if (this.model.isVotedOn() && this.model.vote().get("value") === -1) {
       this.model.vote().save({
         votable_id: this.model.id,
