@@ -4,9 +4,10 @@
   <% recipe.tags().each(function(tag) { %>
     <a href="#/tags/<%= tag.escape("id") %>"><%= tag.escape("label") %></a>
     <% }) %>
-  <a href="">Recipe Index</a>
-  <br>
+  <br><br>
   <pre class="recipe-body"><%= recipe.escape("body") %></pre>
+  <a href="">Recipe Index</a>
+  <br><br>
   <div class="comments-container">
   </div>
 </div>
