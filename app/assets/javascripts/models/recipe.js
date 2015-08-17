@@ -22,6 +22,13 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
     return this._comments;
   },
 
+  author: function() {
+    if (!this._author) {
+      this._author = new ChefGenius.Models.User();
+    }
+    return this._author;
+  },
+
   parse: function(response) {
     if (response.annotations) {
       this.annotations().set(response.annotations, {parse: true});
@@ -35,22 +42,26 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
       this.comments().set(response.comments, {parse: true});
       delete response.comments;
     }
+    if (response.author) {
+      this.author().set(response.author, {parse: true});
+      delete response.author;
+    }
     return response;
   },
 
   fromDomString: function(domString, start, end) {
     var newLinesBefore = domString.slice(0, start).split('\n').length - 1;
     var newLinesBetween = domString.slice(start, end).split('\n').length - 1;
-    var trueStart = start - 4 + newLinesBefore;
-    var trueEnd = end - 4 + newLinesBefore + newLinesBetween;
+    var trueStart = start + newLinesBefore;
+    var trueEnd = end + newLinesBefore + newLinesBetween;
     return [trueStart, trueEnd];
   },
 
   toDomString: function(domString, trueStart, trueEnd) {
     var newLinesBefore = this.get("body").slice(0, trueStart).split('\n').length - 1;
     var newLinesBetween = this.get("body").slice(trueStart, trueEnd).split('\n').length - 1;
-    var start = trueStart + 4 - newLinesBefore;
-    var end = trueEnd + 4 - newLinesBetween - newLinesBefore;
+    var start = trueStart - newLinesBefore;
+    var end = trueEnd - newLinesBetween - newLinesBefore;
     return [start, end];
   }
 });

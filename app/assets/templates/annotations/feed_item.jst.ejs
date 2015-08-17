@@ -4,7 +4,7 @@
 <blockquote>
   <p>"<%= recipe.get("body").slice(start_idx, end_idx) %>"</p>
   <footer>
-    <a href="#/recipes/<%= recipe.get("id") %>"><%= recipe.escape("title") %></a>
+    <a href="#/recipes/<%= recipe.id %>"><%= recipe.escape("title") %></a> by <a href="#/users/<%= recipe.get("author").id %>"><%= recipe.get("author").email %></a>
   </footer>
 </blockquote>
 <pre>
