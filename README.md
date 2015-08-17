@@ -21,7 +21,7 @@ Backbone. Users can:
 - [x] Vote on annotations and replies
 - [ ] Search for recipes
 - [ ] Edit annotations
-- [ ] Guest login
+- [x] Guest login
 
 ## Design Docs
 * [View Wireframes][views]
