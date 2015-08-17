@@ -1,6 +1,6 @@
 ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
   initialize: function() {
-    this.listenTo(this.model, 'sync change:voteCount', this.render);
+    this.listenTo(this.model, 'sync change:vote_count', this.render);
     this.listenTo(this.model.vote(), 'change', this.render);
   },
 
@@ -26,14 +26,14 @@ ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
         votable_type: "Comment",
         value: 1
       });
-      this.model.set({voteCount: this.model.get('voteCount') + 2});
+      this.model.set({vote_count: this.model.get('vote_count') + 2});
     } else if (!this.model.isVotedOn()){
       this.model.vote().save({
         votable_id: this.model.id,
         votable_type: "Comment",
         value: 1
       });
-      this.model.set({voteCount: this.model.get("voteCount") + 1});
+      this.model.set({vote_count: this.model.get("vote_count") + 1});
     }
   },
 
@@ -44,14 +44,14 @@ ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
         votable_type: "Comment",
         value: -1
       });
-      this.model.set({voteCount: this.model.get('voteCount') - 2});
+      this.model.set({vote_count: this.model.get('vote_count') - 2});
     } else if (!this.model.isVotedOn()){
       this.model.vote().save({
         votable_id: this.model.id,
         votable_type: "Comment",
         value: -1
       });
-      this.model.set({voteCount: this.model.get("voteCount") - 1});
+      this.model.set({vote_count: this.model.get("vote_count") - 1});
     }
   }
 });

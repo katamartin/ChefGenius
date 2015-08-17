@@ -53,7 +53,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     comment.set({
       "commentable_id": this.model.get("id"),
       "commentable_type": "Recipe",
-      "voteCount": 0
+      "vote_count": 0
     });
     var subview = new ChefGenius.Views.CommentForm({
       model: comment,
@@ -88,7 +88,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
                         "end_idx": range[1],
                         "recipe_id": this.model.get("id"),
                         "top": top,
-                        "voteCount": 0
+                        "vote_count": 0
                       });
         this.addAnnotationFormView(annotation);
       }

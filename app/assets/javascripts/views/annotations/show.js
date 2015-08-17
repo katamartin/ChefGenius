@@ -2,7 +2,7 @@ ChefGenius.Views.AnnotationShow = Backbone.CompositeView.extend({
   initialize: function() {
     this.addCommentsIndexView(this.model.comments());
     this.addCommentFormView();
-    this.listenTo(this.model, 'sync change:voteCount', this.render);
+    this.listenTo(this.model, 'sync change:vote_count', this.render);
     this.listenTo(this.model.vote(), 'change', this.render);
   },
 
@@ -20,7 +20,7 @@ ChefGenius.Views.AnnotationShow = Backbone.CompositeView.extend({
     comment.set({
       "commentable_id": this.model.get("id"),
       "commentable_type": "Annotation",
-      "voteCount": 0
+      "vote_count": 0
     });
     var subview = new ChefGenius.Views.CommentForm({
       model: comment,
@@ -51,14 +51,14 @@ ChefGenius.Views.AnnotationShow = Backbone.CompositeView.extend({
         votable_type: "Annotation",
         value: 1
       });
-      this.model.set({voteCount: this.model.get('voteCount') + 2});
+      this.model.set({vote_count: this.model.get('vote_count') + 2});
     } else if (!this.model.isVotedOn()){
       this.model.vote().save({
         votable_id: this.model.id,
         votable_type: "Annotation",
         value: 1
       });
-      this.model.set({voteCount: this.model.get("voteCount") + 1});
+      this.model.set({vote_count: this.model.get("vote_count") + 1});
     }
   },
 
@@ -69,14 +69,14 @@ ChefGenius.Views.AnnotationShow = Backbone.CompositeView.extend({
         votable_type: "Annotation",
         value: -1
       });
-      this.model.set({voteCount: this.model.get('voteCount') - 2});
+      this.model.set({vote_count: this.model.get('vote_count') - 2});
     } else if (!this.model.isVotedOn()){
       this.model.vote().save({
         votable_id: this.model.id,
         votable_type: "Annotation",
         value: -1
       });
-      this.model.set({voteCount: this.model.get("voteCount") - 1});
+      this.model.set({vote_count: this.model.get("vote_count") - 1});
     }
   }
 });
