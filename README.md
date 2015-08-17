@@ -18,7 +18,7 @@ Backbone. Users can:
 - [x] Comment on recipes
 - [x] View users' activity
 - [x] Reply to annotations
-- [ ] Vote on annotations and replies
+- [x] Vote on annotations and replies
 - [ ] Search for recipes
 - [ ] Edit annotations
 - [ ] Guest login
