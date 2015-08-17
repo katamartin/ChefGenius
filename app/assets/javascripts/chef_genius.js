@@ -4,12 +4,12 @@ window.ChefGenius = {
   Views: {},
   Routers: {},
   initialize: function() {
-    $(".guest").on("click", function(event) {
-      event.preventDefault();
-      $("#user_email").val("guest@chefgenius.io");
-      $("#user_password").val("password");
-      $(".submit").click();
-    });
+    // $(".guest").on("click", function(event) {
+    //   event.preventDefault();
+    //   $("#user_email").val("guest@chefgenius.io");
+    //   $("#user_password").val("password");
+    //   $(".submit").click();
+    // });
     new ChefGenius.Routers.Router({
       $rootEl: $("#content"),
       recipes: ChefGenius.Collections.recipes,
@@ -20,6 +20,6 @@ window.ChefGenius = {
   }
 };
 
-$(document).ready(function() {
-  ChefGenius.initialize();
-});
+// $(document).ready(function() {
+//   ChefGenius.initialize();
+// });
