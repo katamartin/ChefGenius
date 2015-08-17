@@ -8,7 +8,7 @@ window.ChefGenius = {
       event.preventDefault();
       $("#user_email").val("guest@chefgenius.io");
       $("#user_password").val("password");
-      $(".submit").click()
+      $(".submit").click();
     });
     new ChefGenius.Routers.Router({
       $rootEl: $("#content"),
