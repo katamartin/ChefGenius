@@ -5,13 +5,13 @@
 <div class= "user-activity col-md-8">
   <ul class="nav nav-tabs">
     <li role="presentation" class="active" id="annotations">
-      <a href="javascript:void(0)">Annotations</a>
+      <a href="javascript:void(0)">Annotations <span class="badge"><%= user.annotations().length %></span></a>
     </li>
     <li role="presentation" id="recipes">
-      <a href="javascript:void(0)">Recipes</a>
+      <a href="javascript:void(0)">Recipes <span class="badge"><%= user.recipes().length %></span></a>
     </li>
     <li role="presentation" id="comments">
-      <a href="javascript:void(0)">Comments</a>
+      <a href="javascript:void(0)">Comments <span class="badge"><%= user.comments().length %></span></a>
     </li>
   </ul>
   <div class="tab-content">

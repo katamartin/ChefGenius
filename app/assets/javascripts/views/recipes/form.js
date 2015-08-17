@@ -6,7 +6,7 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
   className: "form-group",
 
   events: {
-    "click button": "save"
+    "click .save": "save"
   },
 
   render: function() {
