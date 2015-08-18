@@ -1,6 +1,12 @@
 class Api::RecipesController < ApplicationController
   def index
-    @recipes = Recipe.includes(:author).all
+    if params[:query] || params["query"]
+      @recipes = Recipe.
+                   includes(:author, :tags).
+                   where("recipes.title LIKE '%#{params[:query]}%'")
+    else
+      @recipes = Recipe.includes(:author).all
+    end
     render :index
   end
 
@@ -28,6 +34,11 @@ class Api::RecipesController < ApplicationController
       ).
       find(params[:id])
     render :show
+  end
+
+  def search
+    @recipes = Recipe.includes(:author).all
+    render :search
   end
 
   private

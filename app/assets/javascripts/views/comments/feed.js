@@ -14,7 +14,7 @@ ChefGenius.Views.CommentFeed = Backbone.CompositeView.extend({
   },
 
   removeCommentView: function(comment) {
-    this.removeModelSubview('.comments', subview);
+    this.removeModelSubview('.comments', comment);
   },
 
   render: function() {

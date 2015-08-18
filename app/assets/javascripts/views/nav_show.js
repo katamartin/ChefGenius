@@ -11,11 +11,11 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
     });
     this.listenTo(this.router, "route", this.handleRoute);
     this.listenTo(this.collection, "add remove", this.updateCount);
-    window.nav = this;
   },
 
   events: {
-    "click .logout": "endSession"
+    "click .logout": "endSession",
+    "click .search": "search"
   },
 
   handleRoute: function (routeName, params) {
@@ -34,6 +34,12 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
     });
     this.$el.html(content);
     return this;
+  },
+
+  search: function(event) {
+    event.preventDefault();
+    var val = $(".query-value").val()
+    Backbone.history.navigate("#/recipes/search/" + val, {trigger: true});
   },
 
   endSession: function(event) {
