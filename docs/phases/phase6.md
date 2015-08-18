@@ -14,6 +14,6 @@
 ### Collections
 
 ### Views
-* SearchShow (composite view, contains BlogsIndex and PostsIndex subviews)
+* SearchShow (composite view, contains RecipeIndexItem subviews)
 
 ## Gems/Libraries
