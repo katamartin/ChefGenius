@@ -3,7 +3,6 @@ ChefGenius.Routers.Router = Backbone.Router.extend({
     this.recipes = options.recipes;
     this.tags = options.tags;
     this.users = options.users;
-    // this.tags.fetch();
     this.$rootEl = options.$rootEl;
   },
 

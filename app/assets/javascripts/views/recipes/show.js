@@ -2,6 +2,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
     this.listenTo(this.model.annotations(), "add", this.attachAnnotationLink);
+    this.listenTo(this.model.annotations(), "add", this.addNewAnnotationView);
     this.addCommentFormView();
     this.addCommentsIndexView(this.model.comments());
   },
@@ -14,6 +15,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   },
 
   render: function() {
+    this.emptyContainer(".annotation-container");
     var content = this.template({recipe: this.model});
     this.$el.html(content);
     this.attachSubviews();
@@ -136,6 +138,11 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     return t.getRangeAt(0).startOffset + count;
   },
 
+  addNewAnnotationView: function(annotation) {
+    this.emptyContainer(".annotation-container");
+    $(".annotation#" + annotation.id).click();
+  },
+
   addAnnotationView: function(event) {
     event.preventDefault();
     var target = $(event.currentTarget);
@@ -149,7 +156,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   emptyContainer: function(selector) {
     this.$(selector).empty();
     _(this.subviews(selector)).each(function(subview) {
-      subview.remove();
-    });
+      this.removeSubview(selector, subview);
+    }.bind(this));
   }
 });
