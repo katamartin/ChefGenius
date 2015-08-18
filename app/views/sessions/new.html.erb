@@ -3,3 +3,12 @@
                      header_text: "Sign in",
                      link_text: "Sign up",
                      link_action: new_user_url } %>
+
+<script type="text/javascript" charset="utf-8">
+  $(".guest").on("click", function(event) {
+    event.preventDefault();
+    $("#user_email").val("guest@chefgenius.io");
+    $("#user_password").val("password");
+    $(".submit").click();
+  });
+</script>

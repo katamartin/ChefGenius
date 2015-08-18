@@ -11,6 +11,11 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
     });
     this.listenTo(this.router, "route", this.handleRoute);
     this.listenTo(this.collection, "add remove", this.updateCount);
+    window.nav = this;
+  },
+
+  events: {
+    "click .logout": "endSession"
   },
 
   handleRoute: function (routeName, params) {
@@ -20,7 +25,7 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
 
   updatePopularTags: function () {
     this.topFive = this.tags.slice(0, 5);
-    $("#navbar").html(this.render().$el);
+    this.render();
   },
 
   render: function () {
@@ -29,5 +34,16 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
     });
     this.$el.html(content);
     return this;
+  },
+
+  endSession: function(event) {
+    event.preventDefault();
+    $.ajax({
+      url: "/session",
+      method: "delete",
+      success: function(data) {
+        window.location = "";
+      }
+    });
   }
 });

@@ -14,7 +14,7 @@ ChefGenius.Views.AnnotationFeed = Backbone.CompositeView.extend({
   },
 
   removeAnnotationView: function(annotation) {
-    this.removeModelSubview('.annotations', subview);
+    this.removeModelSubview('.annotations', annotation);
   },
 
   render: function() {

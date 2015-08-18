@@ -4,12 +4,6 @@ window.ChefGenius = {
   Views: {},
   Routers: {},
   initialize: function() {
-    $(".guest").on("click", function(event) {
-      event.preventDefault();
-      $("#user_email").val("guest@chefgenius.io");
-      $("#user_password").val("password");
-      $(".submit").click();
-    });
     var router = new ChefGenius.Routers.Router({
       $rootEl: $("#content"),
       recipes: ChefGenius.Collections.recipes,
@@ -20,16 +14,11 @@ window.ChefGenius = {
     var nav = new ChefGenius.Views.NavShow({
       router: router,
       collection: ChefGenius.Collections.recipes,
-      tags: ChefGenius.Collections.tags,
-      router: router
+      tags: ChefGenius.Collections.tags
     });
 
-    $("#navbar").html(nav.render().$el);
-
+    $("#navbar").html(nav.$el);
+    nav.render();
     Backbone.history.start();
   }
 };
-
-// $(document).ready(function() {
-//   ChefGenius.initialize();
-// });
