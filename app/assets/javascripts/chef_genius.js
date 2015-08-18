@@ -10,16 +10,26 @@ window.ChefGenius = {
       $("#user_password").val("password");
       $(".submit").click();
     });
-    new ChefGenius.Routers.Router({
+    var router = new ChefGenius.Routers.Router({
       $rootEl: $("#content"),
       recipes: ChefGenius.Collections.recipes,
       tags: ChefGenius.Collections.tags,
       users: ChefGenius.Collections.users
     });
+
+    var nav = new ChefGenius.Views.NavShow({
+      router: router,
+      collection: ChefGenius.Collections.recipes,
+      tags: ChefGenius.Collections.tags,
+      router: router
+    });
+
+    $("#navbar").html(nav.render().$el);
+
     Backbone.history.start();
   }
 };
 
-$(document).ready(function() {
-  ChefGenius.initialize();
-});
+// $(document).ready(function() {
+//   ChefGenius.initialize();
+// });

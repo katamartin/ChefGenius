@@ -6,7 +6,6 @@ ChefGenius.Models.Tag = Backbone.Model.extend({
     if (!this._recipes) {
       this._recipes = new ChefGenius.Collections.Recipes([], {tag: this});
     }
-
     return this._recipes;
   },
 

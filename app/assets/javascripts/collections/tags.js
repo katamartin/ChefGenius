@@ -3,6 +3,10 @@ ChefGenius.Collections.Tags = Backbone.Collection.extend({
 
   url: "/api/tags",
 
+  comparator: function(tag) {
+    return tag.get("count") * -1;
+  },
+
   getOrFetch: function(id) {
     var tag = this.get(id);
     if (!tag) {
