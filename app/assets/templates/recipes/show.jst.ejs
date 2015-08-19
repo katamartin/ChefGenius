@@ -6,11 +6,10 @@
       <a href="#/tags/<%= tag.escape("id") %>"><%= tag.escape("label") %></a>
       <% }) %>
     <br><br>
-    <% recipe.images().each(function(image) { %>
-      <img class="recipe-image" src="<%= image.escape("url") %>">
-      <br>
-      <br>
-    <% }) %>
+    <% var image = recipe.image(); %>
+    <img class="recipe-image" src="<%= image.escape("url") %>">
+    <br>
+    <br>
     <pre class="recipe-body"><%= recipe.escape("body") %></pre>
     <a href="">Recipe Index</a>
     <br><br>

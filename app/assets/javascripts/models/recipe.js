@@ -22,11 +22,11 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
     return this._comments;
   },
 
-  images: function() {
-    if (!this._images) {
-      this._images = new ChefGenius.Collections.Images([], {recipe: this});
+  image: function() {
+    if (!this._image) {
+      this._image = new ChefGenius.Models.Image();
     }
-    return this._images;
+    return this._image;
   },
 
   parse: function(response) {
@@ -42,9 +42,9 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
       this.comments().set(response.comments, {parse: true});
       delete response.comments;
     }
-    if (response.images) {
-      this.images().set(response.images, {parse: true});
-      delete response.images;
+    if (response.image) {
+      this.image().set(response.image, {parse: true});
+      delete response.image;
     }
     return response;
   },

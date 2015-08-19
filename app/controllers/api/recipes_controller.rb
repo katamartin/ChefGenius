@@ -32,7 +32,7 @@ class Api::RecipesController < ApplicationController
       includes(
         :author,
         :tags,
-        :images,
+        :image,
         annotations: [:votes, comments: [:votes, :author]],
         comments: [:votes, :author]
       ).

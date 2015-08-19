@@ -24,10 +24,10 @@ class Recipe < ActiveRecord::Base
     primary_key: :id
   )
 
-  has_many :recipe_images
-  has_many(
-    :images,
-    through: :recipe_images,
+  has_one :recipe_image
+  has_one(
+    :image,
+    through: :recipe_image,
     source: :image
   )
 end
