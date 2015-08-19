@@ -15,7 +15,8 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
 
   events: {
     "click .logout": "endSession",
-    "click .search": "search"
+    "click .search": "search",
+    "blur .query-value": "clearQuery"
   },
 
   handleRoute: function (routeName, params) {
@@ -26,6 +27,11 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
   updatePopularTags: function () {
     this.topFive = this.tags.slice(0, 5);
     this.render();
+  },
+
+  clearQuery: function(event) {
+    event.preventDefault();
+    $(event.currentTarget).val("");
   },
 
   render: function () {
@@ -44,7 +50,7 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
         },
 
         updater: function(recipe) {
-          $(".query-value").val("");
+          $(".query-value").blur();
           Backbone.history.navigate("#/recipes/" + recipe.id, {trigger: true});
           return "";
         }
