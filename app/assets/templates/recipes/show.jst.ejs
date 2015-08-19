@@ -1,3 +1,6 @@
+<% var image = recipe.image(); %>
+<img class="recipe-image" src="<%= image.escape("url") %>">
+<br>
 <div class="container">
   <div class="recipe-column col-md-6">
     <h1><%= recipe.escape("title") %></h1>
@@ -6,10 +9,6 @@
       <a href="#/tags/<%= tag.escape("id") %>"><%= tag.escape("label") %></a>
       <% }) %>
     <br><br>
-    <% var image = recipe.image(); %>
-    <img class="recipe-image" src="<%= image.escape("url") %>">
-    <br>
-    <br>
     <pre class="recipe-body"><%= recipe.escape("body") %></pre>
     <a href="">Recipe Index</a>
     <br><br>
