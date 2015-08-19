@@ -82,7 +82,7 @@ navigation bar.
 
 ### Bonus Features (TBD)
 - [ ] Use Markdown for better recipe formatting
-- [ ] Typeahead/real-time search bar
+- [x] Typeahead/real-time search bar
 - [ ] Pagination/infinite scroll for recipe index
 - [ ] Multiple sessions/session management
 - [ ] User avatars (Gravatar)
