@@ -15,8 +15,8 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
 
   events: {
     "click .logout": "endSession",
-    "click .search": "search",
-    "blur .query-value": "clearQuery"
+    "blur .query-value": "clearQuery",
+    "click #search": "search"
   },
 
   handleRoute: function (routeName, params) {
@@ -30,8 +30,12 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
   },
 
   clearQuery: function(event) {
-    event.preventDefault();
-    $(event.currentTarget).val("");
+    if (!event.relatedTarget || event.relatedTarget.id !== "search") {
+      event.preventDefault();
+      $(event.currentTarget).val("");
+    } else {
+      this.search(event);
+    }
   },
 
   render: function () {
@@ -39,6 +43,11 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
       top_five: this.topFive
     });
     this.$el.html(content);
+    this.addTypeahead();
+    return this;
+  },
+
+  addTypeahead: function() {
     $.get("/api/recipes/search", function(data){
       $(".query-value").typeahead({
         source: data,
@@ -56,7 +65,6 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
         }
       });
     },'json');
-    return this;
   },
 
   search: function(event) {

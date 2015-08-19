@@ -3,9 +3,9 @@ ChefGenius.Views.RecipeSearch = Backbone.CompositeView.extend({
     this.collection.each(this.addRecipeItemView.bind(this));
   },
 
-  className: "recipes-index",
+  className: "recipes-search",
 
-  template: JST["recipes/index"],
+  template: JST["recipes/search"],
 
   addRecipeItemView: function(recipe) {
     var subview = new ChefGenius.Views.RecipeIndexItem({model: recipe});
