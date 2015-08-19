@@ -106,6 +106,15 @@ a.voted {
   color: gray;
 }
 
+.recipe-body a {
+  color: black;
+  background-color: yellow;
+}
+
+.recipe-body::selection {
+  background: yellow;
+}
+
 
 /*!
  * bootstrap-tokenfield

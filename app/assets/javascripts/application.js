@@ -18,6 +18,8 @@
 //= require bootstrap_tokenfield
 //= require typeahead
 //= require handlebars
+//= require bootstrap_markdown
+//= require marked
 //= require_tree ./utils
 //= require chef_genius
 //= require jquery_serializeJSON
