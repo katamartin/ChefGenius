@@ -6,7 +6,20 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
   className: "form-group",
 
   events: {
-    "click .save": "save"
+    "click .save": "save",
+    "click .upload": "upload"
+  },
+
+  upload: function(event) {
+    event.preventDefault();
+    var image = new ChefGenius.Models.Image();
+    filepicker.setKey(FP_API_KEY);
+    filepicker.pick(
+      function(image) {
+        image.set({"url", image.url});
+        this.model.images().add(image);
+      }.bind(this)
+    );
   },
 
   render: function() {

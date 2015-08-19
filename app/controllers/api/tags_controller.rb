@@ -10,12 +10,7 @@ class Api::TagsController < ApplicationController
     @tags = Tag.all
     render :index
   end
-
-  def search
-    @tags = Tag.all
-    render :search
-  end
-
+  
   private
   def tag_params
     params.require(:tag).permit(:label)

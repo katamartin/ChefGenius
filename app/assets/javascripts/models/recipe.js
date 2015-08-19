@@ -22,6 +22,13 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
     return this._comments;
   },
 
+  images: function() {
+    if (!this._images) {
+      this._images = new ChefGenius.Collections.Images([], {recipe: this});
+    }
+    return this._images;
+  },
+
   parse: function(response) {
     if (response.annotations) {
       this.annotations().set(response.annotations, {parse: true});
@@ -34,6 +41,10 @@ ChefGenius.Models.Recipe = Backbone.Model.extend({
     if (response.comments) {
       this.comments().set(response.comments, {parse: true});
       delete response.comments;
+    }
+    if (response.images) {
+      this.images().set(response.images, {parse: true});
+      delete response.images;
     }
     return response;
   },

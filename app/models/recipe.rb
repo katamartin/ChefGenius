@@ -23,4 +23,11 @@ class Recipe < ActiveRecord::Base
     foreign_key: :id,
     primary_key: :id
   )
+
+  has_many :recipe_images
+  has_many(
+    :images,
+    through: :recipe_images,
+    source: :image
+  )
 end

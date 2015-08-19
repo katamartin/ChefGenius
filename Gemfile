@@ -15,7 +15,8 @@ gem 'annotate'
 gem 'bcrypt'
 gem 'backbone-on-rails'
 gem 'bootstrap-sass'
-
+gem 'figaro'
+gem 'cloudinary'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
