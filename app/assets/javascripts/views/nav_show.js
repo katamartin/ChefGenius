@@ -33,6 +33,23 @@ ChefGenius.Views.NavShow = Backbone.View.extend({
       top_five: this.topFive
     });
     this.$el.html(content);
+    $.get("/api/recipes/search", function(data){
+      $(".query-value").typeahead({
+        source: data,
+        highlighter: function(name) {
+          var recipe = _.find(data, function(p) {
+            return p.name == name;
+          });
+          return recipe.name + " by " + recipe.author;
+        },
+
+        updater: function(recipe) {
+          $(".query-value").val("");
+          Backbone.history.navigate("#/recipes/" + recipe.id, {trigger: true});
+          return "";
+        }
+      });
+    },'json');
     return this;
   },
 
