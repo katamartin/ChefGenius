@@ -1,4 +1,4 @@
-json.extract! @recipe, :title, :body, :image_url, :id, :author_id
+json.extract! @recipe, :title, :body, :id, :author_id
 json.author @recipe.author.email
 json.images @recipe.images do |image|
   json.id image.id

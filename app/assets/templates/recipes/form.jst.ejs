@@ -1,33 +1,35 @@
-<h1>New Recipe</h1>
+<div class="container">
+  <h1>New Recipe</h1>
 
-<div class="form-group">
-  <input type="text"
-         name="title"
-         class="form-control"
-         placeholder="Title"
-         value="<%= recipe.escape("title") %>">
+  <div class="form-group">
+    <input type="text"
+           name="title"
+           class="form-control"
+           placeholder="Title"
+           value="<%= recipe.escape("title") %>">
+  </div>
+  <br>
+
+  <div class="form-group">
+    <textarea name="body"
+              class="form-control"
+              rows="5"
+              placeholder="Body"><%= recipe.escape("body") %></textarea>
+  </div>
+  <button class="upload">Upload Image</button>
+  <br>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="sizing-addon2">
+      <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+    </span>
+    <input type="text"
+           data-role="tokenfield"
+           name="tags"
+           class="form-control tag-field"
+           placeholder="Tags">
+  </div>
+
+  <br>
+  <button class="save">Submit</button>
 </div>
-<br>
-
-<div class="form-group">
-  <textarea name="body"
-            class="form-control"
-            rows="5"
-            placeholder="Body"><%= recipe.escape("body") %></textarea>
-</div>
-<button class="upload">Upload Image</button>
-<br>
-
-<div class="input-group">
-  <span class="input-group-addon" id="sizing-addon2">
-    <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
-  </span>
-  <input type="text"
-         data-role="tokenfield"
-         name="tags"
-         class="form-control tag-field"
-         placeholder="Tags">
-</div>
-
-<br>
-<button class="save">Submit</button>

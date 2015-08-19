@@ -26,6 +26,7 @@
 .welcome-content {
   position: absolute;
   top: 35%;
+
 }
 
 .user-form  {
@@ -118,6 +119,11 @@ a.voted {
 img.recipe-image {
   position: relative;
   width: 100%;
+  border-radius: 5px;
+}
+
+nav.navbar-default {
+  margin-bottom: 0px;
 }
 
 
