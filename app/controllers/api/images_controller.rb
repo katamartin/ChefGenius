@@ -15,6 +15,6 @@ class Api::ImagesController < ApplicationController
 
   private
   def image_params
-    params.require(:image).permit(:url, :thumb_url)
+    params.require(:image).permit(:url)
   end
 end

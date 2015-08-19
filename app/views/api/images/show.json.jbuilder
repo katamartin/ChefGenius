@@ -1,1 +1,1 @@
-json.extract! @image, :id, :url, :thumb_url
+json.extract! @image, :id, :url

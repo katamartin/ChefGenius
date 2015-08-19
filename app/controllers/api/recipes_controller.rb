@@ -16,7 +16,10 @@ class Api::RecipesController < ApplicationController
       id = Tag.findOrCreate(tag).id
       tag_ids << id if id
     end
-    @recipe = current_user.recipes.new(recipe_params.merge(tag_ids: tag_ids))
+    @recipe = current_user.recipes.new(recipe_params.
+      merge(tag_ids: tag_ids).
+      merge(image_ids: params[:image_ids])
+    )
     if @recipe.save
       render :show
     else
@@ -29,6 +32,7 @@ class Api::RecipesController < ApplicationController
       includes(
         :author,
         :tags,
+        :images,
         annotations: [:votes, comments: [:votes, :author]],
         comments: [:votes, :author]
       ).
@@ -43,6 +47,6 @@ class Api::RecipesController < ApplicationController
 
   private
   def recipe_params
-    params.require(:recipe).permit(:title, :body, :image_url)
+    params.require(:recipe).permit(:title, :body, :image_ids)
   end
 end

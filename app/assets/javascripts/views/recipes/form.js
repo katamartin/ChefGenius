@@ -15,9 +15,18 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
     var image = new ChefGenius.Models.Image();
     filepicker.setKey(FP_API_KEY);
     filepicker.pick(
-      function(image) {
-        image.set({"url", image.url});
-        this.model.images().add(image);
+      {
+        services: ["COMPUTER", "WEBCAM", "IMAGE_SEARCH", "URL"]
+      },
+
+      function(fpImage) {
+        image.set({"url": fpImage.url});
+        image.save({}, {
+          success: function() {
+            this.model.images().add(image);
+            $(".upload").prop("disabled", true);
+          }.bind(this)
+        });
       }.bind(this)
     );
   },
@@ -35,6 +44,7 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
     if (recipeData.tags) {
       recipeData.tags = recipeData.tags.split(", ");
     }
+    this.model.set({"image_ids": this.model.images().pluck("id")});
     this.model.set(recipeData);
     this.model.save({}, {
       success: function() {
