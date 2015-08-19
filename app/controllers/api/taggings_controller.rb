@@ -4,7 +4,7 @@ class Api::TaggingsController < ApplicationController
     if @tagging.save
       render :show
     else
-      render json: @tagging.errors.full_messages
+      render json: @tagging.errors.full_messages, status: :unprocessable_entity
     end
   end
 

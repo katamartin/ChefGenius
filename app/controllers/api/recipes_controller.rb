@@ -20,7 +20,7 @@ class Api::RecipesController < ApplicationController
     if @recipe.save
       render :show
     else
-      render json: @recipe.errors.full_messages
+      render json: @recipe.errors.full_messages, status: :unprocessable_entity
     end
   end
 

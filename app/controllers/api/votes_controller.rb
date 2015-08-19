@@ -4,7 +4,7 @@ class Api::VotesController < ApplicationController
     if @vote.save
       render json: @vote
     else
-      render json: @vote.errors.full_messages
+      render json: @vote.errors.full_messages, status: :unprocessable_entity
     end
   end
 
@@ -16,7 +16,7 @@ class Api::VotesController < ApplicationController
     if @vote.update(value: params[:value])
       render json: @vote
     else
-      render json: @vote.errors.full_messages
+      render json: @vote.errors.full_messages, status: :unprocessable_entity
     end
   end
 

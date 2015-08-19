@@ -5,7 +5,7 @@ class Api::AnnotationsController < ApplicationController
       @recipe = @annotation.recipe
       render :show
     else
-      render json: @annotation.errors.full_messages
+      render json: @annotation.errors.full_messages, status: :unprocessable_entity
     end
   end
 
