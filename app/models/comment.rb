@@ -19,6 +19,6 @@ class Comment < ActiveRecord::Base
   end
 
   def formatted_date
-    created_at.strftime("on %b %d, %Y at %I:%M%p")
+    created_at.localtime.strftime("on %b %d, %Y at %I:%M%p")
   end
 end
