@@ -1,10 +1,10 @@
 ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model, "sync", this.addCommentsIndexView);
     this.listenTo(this.model.annotations(), "add", this.attachAnnotationLink);
     this.listenTo(this.model.annotations(), "add", this.addNewAnnotationView);
     this.addCommentFormView();
-    this.addCommentsIndexView(this.model.comments());
   },
 
   template: JST["recipes/show"],
@@ -36,7 +36,8 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     return valid;
   },
 
-  addCommentsIndexView: function(comments) {
+  addCommentsIndexView: function() {
+    var comments = this.model.comments();
     var subview = new ChefGenius.Views.CommentsIndex({collection: comments});
     this.addSubview(".comments-container", subview);
   },
