@@ -81,6 +81,7 @@
   border-top: solid black 10px;
   margin-top: 10px;
   padding-top: 5px;
+  text-overflow: ellipsis;
 }
 .recipe-index-item:hover {
   text-decoration: underline;
@@ -175,6 +176,12 @@ a.tag {
 
 a.tag:hover {
   text-decoration: none;
+}
+
+.tag-show h1 {
+  background-color: black;
+  color: white;
+  padding: 5px;
 }
 
 

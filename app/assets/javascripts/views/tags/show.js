@@ -6,7 +6,7 @@ ChefGenius.Views.TagShow = Backbone.CompositeView.extend({
     this.model.recipes().each(this.addRecipeItemView.bind(this));
   },
 
-  className: "recipes-index",
+  className: "tag-show",
 
   template: JST["tags/show"],
 

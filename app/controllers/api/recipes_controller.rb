@@ -18,7 +18,7 @@ class Api::RecipesController < ApplicationController
     end
     @recipe = current_user.recipes.new(recipe_params.
       merge(tag_ids: tag_ids).
-      merge(image_ids: params[:image_ids])
+      merge(image: Image.find(params[:image_id]))
     )
     if @recipe.save
       render :show

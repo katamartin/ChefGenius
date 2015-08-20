@@ -12,7 +12,6 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
 
   upload: function(event) {
     event.preventDefault();
-    var image = new ChefGenius.Models.Image();
     filepicker.setKey(FP_API_KEY);
     filepicker.pick(
       {
@@ -20,10 +19,9 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
       },
 
       function(fpImage) {
-        image.set({"url": fpImage.url});
-        image.save({}, {
+        this.model.image().set({"url": fpImage.url});
+        this.model.image().save({}, {
           success: function() {
-            this.model.images().add(image);
             $(".upload").prop("disabled", true);
           }.bind(this)
         });
@@ -44,7 +42,7 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
     if (recipeData.tags) {
       recipeData.tags = recipeData.tags.split(", ");
     }
-    this.model.set({"image_ids": this.model.images().pluck("id")});
+    this.model.set({"image_id": this.model.image().id});
     this.model.set(recipeData);
     this.model.save({}, {
       success: function() {
