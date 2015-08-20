@@ -15,4 +15,8 @@ class Comment < ActiveRecord::Base
   def vote_count
     votes.inject(0) { |accum, el| accum + el.value }
   end
+
+  def formatted_date
+    created_at.strftime("%b %d, %Y %I:%M%p")
+  end
 end

@@ -6,16 +6,11 @@ end
 
 json.annotations @user.annotations do |annotation|
   json.recipe annotation.recipe, partial: 'api/recipes/recipe', as: :recipe
-  json.body annotation.body
-  json.start_idx annotation.start_idx
-  json.end_idx annotation.end_idx
-  json.date annotation.created_at
+  json.(annotation, :body, :start_idx, :end_idx, :formatted_date)
 end
 
 json.comments @user.comments do |comment|
-  json.body comment.body
-  json.date comment.created_at
-  json.commentable_type comment.commentable_type
+  json.(comment, :body, :formatted_date, :commentable_type)
   if comment.commentable_type == "Recipe"
     json.recipe comment.commentable, partial: 'api/recipes/recipe', as: :recipe
   else

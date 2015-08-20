@@ -25,6 +25,10 @@ class Annotation < ActiveRecord::Base
     end
   end
 
+  def formatted_date
+    created_at.strftime("%b %d, %Y %I:%M%p")
+  end
+
   def vote_count
     votes.inject(0) { |accum, el| accum + el.value }
   end
