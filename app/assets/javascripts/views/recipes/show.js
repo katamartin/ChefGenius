@@ -71,7 +71,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       return false;
     } else {
       var containsAnnotation = !t.extentNode.isEqualNode(t.anchorNode);
-      var overlapsAnnotation = t.extentNode.parentNode.tagName !== "PRE";
+      var overlapsAnnotation = t.extentNode.parentNode.tagName !== "P";
       return !(containsAnnotation || overlapsAnnotation);
     }
   },

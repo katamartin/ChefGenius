@@ -135,6 +135,13 @@ a.voted {
   background: yellow;
 }
 
+.recipe-body {
+  white-space: pre-wrap;
+  background-color: rgba(211, 211, 211, 0.14);
+  padding: 10px;
+  border-left: black solid 7px;
+}
+
 img.recipe-image {
   position: relative;
   width: 100%;

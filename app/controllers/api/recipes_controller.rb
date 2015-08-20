@@ -33,7 +33,7 @@ class Api::RecipesController < ApplicationController
         :author,
         :image,
         :tags,
-        annotations: [:votes, comments: [:votes, :author]],
+        annotations: [:votes, :author, comments: [:votes, :author]],
         comments: [:votes, :author]
       ).
       find(params[:id])
