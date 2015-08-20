@@ -5,7 +5,7 @@ class Api::RecipesController < ApplicationController
                    includes(:author, :tags).
                    where("recipes.title LIKE '%#{params[:query]}%'")
     else
-      @recipes = Recipe.includes(:author).all
+      @recipes = Recipe.includes(:author, :image).all
     end
     render :index
   end

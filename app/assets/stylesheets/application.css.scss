@@ -64,9 +64,30 @@
 }
 .recipe-index-item {
   float: left;
-  padding: 10px;
+  width: 33.33%;
+  width: calc(100% / 3 - 40px);
+  height: 300px;
   margin: 10px;
-  background-color: gray;
+}
+
+.recipe-image-container {
+  position: relative;
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.recipe-index-item h3 {
+  border-top: solid black 10px;
+  margin-top: 10px;
+  padding-top: 5px;
+}
+.recipe-index-item:hover {
+  text-decoration: underline;
+}
+
+.recipe-index-item img {
+  width: 100%;
 }
 
 .comment-index-item:first-child {
@@ -79,10 +100,6 @@
 
 .tab-content > div.active {
   display: block;
-}
-
-.recipe-index-item:hover {
-  color: white;
 }
 
 .recipe-feed li {

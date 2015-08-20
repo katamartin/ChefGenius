@@ -1,6 +1,11 @@
 json.array! @recipes do |recipe|
-  json.title recipe.title
+  json.extract! recipe, :title, :body, :id
   json.author recipe.author.email
-  json.body recipe.body
-  json.id recipe.id
+  if recipe.image
+    json.image recipe.image, :id, :url
+  else
+    json.image do
+      json.url Recipe.default_image_url
+    end
+  end
 end
