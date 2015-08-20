@@ -167,6 +167,16 @@ blockquote p {
   display: inline;
 }
 
+a.tag {
+  background-color: black;
+  color: white;
+  padding: 3px;
+}
+
+a.tag:hover {
+  text-decoration: none;
+}
+
 
 /*!
  * bootstrap-tokenfield

@@ -1,11 +1,11 @@
 class Api::TagsController < ApplicationController
   def show
     @tag = Tag.
-      includes(recipes: [:author]).
+      includes(recipes: [:author, :image]).
       find(params[:id])
     render :show
   end
-  
+
   def index
     @tags = Tag.all
     render :index

@@ -7,7 +7,7 @@
     <h1><%= recipe.escape("title") %></h1>
     <h2>Posted by <a href="#/users/<%= recipe.escape("author_id") %>"><%= recipe.escape("author") %></a></h2>
     <% recipe.tags().each(function(tag) { %>
-      <a href="#/tags/<%= tag.escape("id") %>"><%= tag.escape("label") %></a>
+      <a class="tag" href="#/tags/<%= tag.escape("id") %>"><%= tag.escape("label") %></a>
       <% }) %>
     <br><br>
     <pre class="recipe-body"><%= recipe.escape("body") %></pre>
