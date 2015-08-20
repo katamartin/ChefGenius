@@ -30,4 +30,8 @@ class Recipe < ActiveRecord::Base
     through: :recipe_image,
     source: :image
   )
+
+  def self.default_image_url
+    "https://images.unsplash.com/photo-1438010276863-4befc0046f93?q=80&fm=jpg&s=095835bdf078cdbca81bac4fcc925fe9"
+  end
 end
