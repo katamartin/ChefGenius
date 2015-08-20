@@ -1,7 +1,7 @@
 ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
   initialize: function() {
     this.listenTo(this.model, 'sync change:vote_count', this.render);
-    this.listenTo(this.model.vote(), 'change', this.render);
+    this.listenTo(this.model.vote(), 'change destroy', this.render);
   },
 
   template: JST["comments/index_item"],
@@ -19,39 +19,36 @@ ChefGenius.Views.CommentIndexItem = Backbone.View.extend({
     return this;
   },
 
-  upvote: function() {
-    if (this.model.isVotedOn() && this.model.vote().get("value") === -1) {
+  vote: function(val) {
+    if (this.model.isVotedOn() && this.model.vote().get("value") !== val) {
       this.model.vote().save({
         votable_id: this.model.id,
         votable_type: "Comment",
-        value: 1
+        value: val
       });
-      this.model.set({vote_count: this.model.get('vote_count') + 2});
+      this.model.set({vote_count: this.model.get('vote_count') + 2 * val});
     } else if (!this.model.isVotedOn()){
       this.model.vote().save({
         votable_id: this.model.id,
         votable_type: "Comment",
-        value: 1
+        value: val
       });
-      this.model.set({vote_count: this.model.get("vote_count") + 1});
+      this.model.set({vote_count: this.model.get("vote_count") + val});
+    } else {
+      this.model.vote().destroy({
+        success: function () {
+          this.model.vote().clear();
+          this.model.set({vote_count: this.model.get("vote_count") - val});
+        }.bind(this)
+      });
     }
   },
 
+  upvote: function() {
+    this.vote(1);
+  },
+
   downvote: function() {
-    if (this.model.isVotedOn() && this.model.vote().get("value") === 1) {
-      this.model.vote().save({
-        votable_id: this.model.id,
-        votable_type: "Comment",
-        value: -1
-      });
-      this.model.set({vote_count: this.model.get('vote_count') - 2});
-    } else if (!this.model.isVotedOn()){
-      this.model.vote().save({
-        votable_id: this.model.id,
-        votable_type: "Comment",
-        value: -1
-      });
-      this.model.set({vote_count: this.model.get("vote_count") - 1});
-    }
+    this.vote(-1);
   }
 });

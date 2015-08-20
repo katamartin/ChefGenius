@@ -31,8 +31,8 @@ class Api::RecipesController < ApplicationController
     @recipe = Recipe.
       includes(
         :author,
-        :tags,
         :image,
+        taggings: [:tags],
         annotations: [:votes, comments: [:votes, :author]],
         comments: [:votes, :author]
       ).
