@@ -91,8 +91,11 @@
   width: 100%;
 }
 
-.comment-index-item:first-child {
-  padding-top: 10px;
+.comment-index-item p {
+  white-space: pre-wrap;
+  background-color: rgba(211, 211, 211, 0.14);
+  padding-bottom: 10px;
+  border-radius: 5px;
 }
 
 .tab-content > div {
@@ -140,6 +143,9 @@ a.voted {
   background-color: rgba(211, 211, 211, 0.14);
   padding: 10px;
   border-left: black solid 7px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 0px;
 }
 
 img.recipe-image {

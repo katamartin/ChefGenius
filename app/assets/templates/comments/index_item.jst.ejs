@@ -5,8 +5,8 @@
 <% } else if (comment.isVotedOn() && comment.vote().get("value") === -1) { %>
   <% downvoteClass = "voted" %>
 <% } %>
-<pre>
+<p>
   <b><a href="#/users/<%= comment.escape("author_id") %>"><%= comment.escape("author") %></a> <%= comment.escape("formatted_date") %></b>
   <%= comment.escape("body") %>
   <a class="upvote <%= upvoteClass %>" aria-label="upvote" href="javascript:void(0)"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a> <%= comment.get("vote_count") %> <a class="downvote <%= downvoteClass %>" aria-label="downvote" href="javascript:void(0)"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></a>
-</pre>
+</p>
