@@ -61,6 +61,11 @@
 .annotation-show {
   position: absolute;
   width: 100%;
+  border-left: black 7px solid;
+  background-color: rgba(211, 211, 211, 0.14);
+  padding: 0px 10px 10px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .recipe-index-item {
   float: left;
@@ -89,6 +94,18 @@
 
 .recipe-index-item img {
   width: 100%;
+}
+
+.recipe-container .comments-container {
+  background-color: rgba(211, 211, 211, 0.14);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.comments-container form {
+  background-color: rgba(211, 211, 211, 0.14);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .comment-index-item p {
