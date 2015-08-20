@@ -45,6 +45,12 @@ class Api::RecipesController < ApplicationController
     render :search
   end
 
+  def destroy
+    @recipe = current_user.recipes.find(params[:id])
+    @recipe.destroy
+    render :show
+  end
+
   private
   def recipe_params
     params.require(:recipe).permit(:title, :body, :image_ids)

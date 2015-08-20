@@ -12,6 +12,9 @@
     <br><br>
     <pre class="recipe-body"><%= recipe.escape("body") %></pre>
     <a href="">Recipe Index</a>
+    <% if (recipe.get("author_id") == ChefGenius.CURRENT_USER.id) { %>
+      <button class="delete">Delete Recipe</button><br>
+    <% } %>
     <br><br>
     <div class="comments-container">
     </div>

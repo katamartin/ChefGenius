@@ -11,7 +11,8 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
 
   events: {
     "mouseup .recipe-body": "isTextSelected",
-    "click .annotation": "addAnnotationView"
+    "click .annotation": "addAnnotationView",
+    "click .delete": "delete"
   },
 
   render: function() {
@@ -159,5 +160,15 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     _(this.subviews(selector)).each(function(subview) {
       this.removeSubview(selector, subview);
     }.bind(this));
+  },
+
+  delete: function(event) {
+    event.preventDefault();
+    var confirmed = confirm("Are you sure you want to delete this recipe?");
+    if (confirmed) {
+      this.model.destroy();
+      this.remove();
+      Backbone.history.navigate("#", {trigger: true});
+    }
   }
 });

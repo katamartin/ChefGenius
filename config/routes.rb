@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     get '/recipes/search', to: 'recipes#search'
-    resources :recipes, only: [:index, :create, :show]
+    resources :recipes, only: [:index, :create, :show, :destroy]
     resources :annotations, only: [:create, :destroy, :show]
     resources :tags, only: [:show, :index]
     resources :comments, only: [:create]
