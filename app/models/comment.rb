@@ -1,3 +1,5 @@
+require 'active_support/core_ext'
+
 class Comment < ActiveRecord::Base
   validates :commentable, :body, :author, presence: true
   belongs_to :commentable, polymorphic: true
@@ -17,6 +19,6 @@ class Comment < ActiveRecord::Base
   end
 
   def formatted_date
-    created_at.strftime("%b %d, %Y %I:%M%p")
+    created_at.strftime("on %b %d, %Y at %I:%M%p")
   end
 end
