@@ -1,7 +1,9 @@
 <% if (recipe.image().id) { %>
+<div class="nav-overlap">
   <div class="recipe-image-header vertical-center">
     <img class="recipe-image" src="<%= recipe.image().escape("url") %>">
   </div>
+</div>
   <br>
 <% } %>
 <div class="container">

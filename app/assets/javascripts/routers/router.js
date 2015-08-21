@@ -59,8 +59,12 @@ ChefGenius.Routers.Router = Backbone.Router.extend({
   },
 
   _swapView: function(view) {
+    $('body').scrollTop(0);
     this._view && this._view.remove();
     this._view = view;
     this.$rootEl.html(view.render().$el);
+    if (this.$rootEl.find(".nav-overlap").length === 0) {
+      this.$rootEl.prepend("<div class='empty-nav-overlap'></div>");
+    }
   }
 });
