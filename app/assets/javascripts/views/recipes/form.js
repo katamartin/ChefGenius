@@ -41,6 +41,8 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
     var recipeData = this.$el.serializeJSON();
     if (recipeData.tags) {
       recipeData.tags = recipeData.tags.split(", ");
+    } else {
+      recipeData.tags = [""];
     }
     this.model.set({"image_id": this.model.image().id});
     this.model.set(recipeData);
@@ -48,6 +50,9 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
       success: function() {
         this.collection.add(this.model, {merge: true});
         Backbone.history.navigate("", {trigger: true});
+      }.bind(this),
+      error: function(model, response, options) {
+        debugger
       }.bind(this)
     });
   }

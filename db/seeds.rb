@@ -778,8 +778,8 @@ comment = recipes[4].comments.create(
 )
 
 comment.votes.create([
-  { author: users[0], value: 1 },
-  { author: users[1], value: 1 }
+  { user: users[0], value: 1 },
+  { user: users[1], value: 1 }
 ])
 
 recipes[9].comments.create([
