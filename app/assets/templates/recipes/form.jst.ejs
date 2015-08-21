@@ -1,16 +1,30 @@
 <div class="container">
   <h1>New Recipe</h1>
 
+
   <div class="form-group">
+    <div class="title error-container"></div>
     <input type="text"
            name="title"
-           class="form-control"
+           class="form-control title"
            placeholder="Title"
            value="<%= recipe.escape("title") %>">
   </div>
+<!--
+<div class="control-group error">
+  <div class="controls">
+    <input type="text"
+           name="title"
+           class="form-control title"
+           placeholder="Title"
+           value="<%= recipe.escape("title") %>">
+    <span class="help-inline">Please correct the error</span>
+  </div>
+</div> -->
   <br>
 
   <div class="form-group">
+    <div class="body error-container"></div>
     <textarea name="body"
               class="form-control"
               rows="5"

@@ -46,13 +46,20 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
     }
     this.model.set({"image_id": this.model.image().id});
     this.model.set(recipeData);
+    this.$(".error-container").empty();
     this.model.save({}, {
       success: function() {
         this.collection.add(this.model, {merge: true});
         Backbone.history.navigate("", {trigger: true});
       }.bind(this),
       error: function(model, response, options) {
-        debugger
+        var issues = response.responseJSON;
+        _(issues).each(function(issue) {
+          var field = issue.split(" ")[0].toLowerCase();
+          $("." + field + ".error-container").html(
+            "<div class='alert alert-danger' role='alert'>" + issue + "</div>"
+          );
+        })
       }.bind(this)
     });
   }

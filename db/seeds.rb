@@ -756,7 +756,7 @@ recipes[3].annotations.create([
     }
 ])
 
-recipes[3].annotations.create([
+recipes[4].annotations.create([
     { author: users[2],
       start_idx: 136,
       end_idx: 167,
@@ -764,7 +764,7 @@ recipes[3].annotations.create([
     }
 ])
 
-recipes[4].annotations.create([
+recipes[5].annotations.create([
     { author: users[0],
       start_idx: 1604,
       end_idx: 1701,
@@ -772,7 +772,7 @@ recipes[4].annotations.create([
     }
 ])
 
-comment = recipes[4].comments.create(
+comment = recipes[5].comments.create(
     author: users[2],
     body: "Thanks for posting!!!!"
 )
