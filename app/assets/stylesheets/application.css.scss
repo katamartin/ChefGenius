@@ -237,10 +237,22 @@ a.tag:hover {
 }
 
 .dropdown-menu a {
-  max-width:100%;
+  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.recipe-image-header{
+  height: 300px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
 }
 
 /*!

@@ -1,5 +1,7 @@
 <% if (recipe.image().id) { %>
-  <img class="recipe-image" src="<%= recipe.image().escape("url") %>">
+  <div class="recipe-image-header vertical-center">
+    <img class="recipe-image" src="<%= recipe.image().escape("url") %>">
+  </div>
   <br>
 <% } %>
 <div class="container">
