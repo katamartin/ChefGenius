@@ -25,7 +25,8 @@ tags = Tag.create([{ label: 'breakfast' },
                    { label: 'citrus' },
                    { label: 'duck' },
                    { label: 'banana' },
-                   { label: 'soup' }
+                   { label: 'soup' },
+                   { label: 'avocado' }
                   ])
 users = User.create([{
                        email: 'guest@geni.us',
@@ -468,4 +469,280 @@ Freeze for at least 12 hours until hardened. If you can spare the molds, I recom
 Notes
 
 Instead of figs, which can be an acquired taste, you can also use peaches, summer berries, mangos, or even lychees."
-                                                  }])
+                                                  },
+                                                  {
+                                                    author: users[3],
+                                                    image: Image.create(
+                                                      url: "https://www.filepicker.io/api/file/601oqyQSKSysUivclRKM"
+                                                    ),
+                                                    title: "Avocado Lemon Zest Pasta",
+                                                    tag_ids: [2, 3, 5, 6, 8, 19],
+                                                    body: "Recipe from A Modern Way to Eat, by Anna Jones published by Ten Speed Press.
+Serves: serves 4
+Ingredients
+sea salt and freshly ground black pepper
+400g brown rice spaghetti
+olive oil
+4 tablespoons capers in brine, roughly chopped
+1 clove of garlic, peeled and very finely sliced
+grated zest of 2 unwaxed lemons, and juice of 1⁄2 a lemon
+a bunch of fresh basil, leaves picked
+a bunch of fresh parsley, leaves picked
+2 ripe avocados
+Instructions
+Fill a big pan with boiling water and add a good pinch of salt. Bring to a rolling boil, then add the pasta and cook for 8–10 minutes, or according to the instructions on the packet, until perfectly al dente.
+Heat some olive oil in a large frying pan on a low heat, then add the capers and garlic and sizzle gently until the edge of the garlic starts to very slightly brown. Remove from the heat and add the lemon zest.
+Chop the herbs and add them to the pan. Halve and destone the avocados, then use a knife to make criss-cross cuts through the flesh, chopping it inside the skin. Use a spoon to scoop out each half into the pan, and stir to mix all the flavours together.
+Before you drain the pasta, carefully scoop out half a mugful of the pasta water. Drain the pasta and add it to the frying pan with a little of the cooking water and a good drizzle of olive oil. Taste and add salt, pepper and lemon juice as needed. Scoop the pasta into bowls and eat on your lap.
+Notes
+I used watercress instead of parsley, and I tossed it in at the very end."
+                                                    },
+                                                    {
+                                                      author: users[3],
+                                                      image: Image.create(
+                                                        url: "https://www.filepicker.io/api/file/g0k5NnWaQZYNt1jGJbZ7"
+                                                      ),
+                                                      title: "Green Bean and Purple Potato Salad",
+                                                      tag_ids: [2, 3, 5, 6, 12],
+                                                      body: "Serves: serves 4 as a side
+Ingredients
+6-8 small-medium purple potatoes (about ¾ pound)
+2 tablespoons olive oil, more to taste
+1 clove garlic, minced
+1 heaping teaspoon of capers
+1 teaspoon dijon mustard
+2 big handfuls of green and/or yellow wax beans
+Juice and zest of 1 lemon
+2 scallions, chopped
+¼ cup fresh parsley, chopped
+¼ cup fresh oregano leaves
+¼ teaspoon red pepper flakes
+sea salt and freshly ground black pepper
+optional:
+½ cup cooked chickpeas
+½ cup cooked bulgur (quinoa, or millet if gluten free)
+soft boiled eggs (instructions here)
+pickled onions (not pictured, but a tasty addition)
+Instructions
+Bring a large pot of salted water to a boil. Scrub the potatoes and slice them into 1 inch pieces. Add the potatoes and cook until knife-tender, about 15 minutes. (Alternatively, you could roast them in the oven with a drizzle of olive oil at 400°F for 20-25 minutes).
+Meanwhile, in a large bowl, combine the olive oil, garlic, capers, mustard and generous pinches of salt and pepper. Use a rubber spatula or wooden spoon to smash the garlic and capers into a paste at the bottom of the bowl. When your potatoes are done, scoop them out of the water (leave the water boiling for your green beans), transfer them to the bowl, and toss to coat them with the 'dressing' at the bottom of the bowl.
+Prepare a bowl of ice water and place it near your pot of boiling water. Add the green beans to the boiling water and cook they’re tender but still vibrant. About 3 minutes. Scoop them out of the boiling water and into the ice bath to cool - about 1 minute. Drain and toss them into the bowl of potatoes. Add the lemon juice, zest, scallions, parsley, oregano, and red pepper flakes and toss to coat.
+Taste and add more salt, pepper, lemon juice to taste. If your salad is a little dry, drizzle some more olive oil and toss again.
+Optional: add cooked chickpeas, a (cooked) grain, and/or a few soft-boiled eggs."
+                                                      },
+                                                      {
+                                                        author: users[3],
+                                                        image: Image.create(
+                                                          url: "https://www.filepicker.io/api/file/4NN2myLTAiLxLDPP9ttq"
+                                                        ),
+                                                        title: "Vegan Mac and Cheese",
+                                                        tag_ids: [2, 3, 5, 6, 8],
+                                                        body: "Ingredients
+1 shallot, chopped
+2 garlic cloves, minced
+Extra-virgin olive oil, for drizzling
+½ teaspoon smoked paprika
+1 tablespoon balsamic vinegar
+1 cup raw cashews, soaked 3 to 4 hours, preferably overnight, and drained
+3 tablespoons extra-virgin olive oil
+½ cup water
+¼ cup nutritional yeast
+2 teaspoons turmeric
+Pinch of cayenne pepper
+Sea salt and freshly ground black pepper
+12 ounces macaroni or small shell pasta
+4 cups packed spinach
+Instructions
+In a small skillet, heat a drizzle of olive oil over medium-low heat. Add the shallot and garlic and sauté until soft, about 3 to 5 minutes. Stir in the paprika and balsamic vinegar and cook another 30 seconds.
+In a high speed blender, puree the sautéed shallot mixture with the cashews, 3 tablespoons of olive oil, the water, nutritional yeast, turmeric, a pinch of cayenne, a pinch of salt, and freshly ground pepper. Makes about 1 ¾ cups of sauce.
+Bring a large pot of salted water to a boil. Prepare the pasta according to the instructions on the package, cooking until al dente. Reserve 1 cup of the pasta water. Drain and return the pasta to the pot. Stir in the sauce, adding the pasta water as needed to thin the sauce and make it creamy. Add the spinach, stir until wilted, and serve."
+                                                        },
+                                                        {
+                                                          author: users[3],
+                                                          image: Image.create(
+                                                            url: "https://www.filepicker.io/api/file/WXXILqFRTEE5mdHn0Vfw"
+                                                          ),
+                                                          title: "Cinnamon Quinoa Breakfast Bowl",
+                                                          tag_ids: [1, 5, 6, 14],
+                                                          body: "Serves: serves 2
+Ingredients
+½ cup uncooked quinoa
+1 cup Almond Breeze Almondmilk, Original or Vanilla
+1-2 cinnamon sticks
+pinch of salt
+piece of a vanilla bean, optional (don’t use vanilla extract)
+toppings:
+toasted sliced almonds
+toasted coconut flakes
+peaches
+raspberries
+maple syrup, optional
+extra splashes of almond milk, optional
+more spices, to taste (cinnamon, nutmeg, etc.), optional
+Instructions
+Rinse and drain the quinoa.
+Place it in a small saucepan and add the almond milk, 1-2 cinnamon sticks, and a pinch of salt. Bring to a high simmer, cover and reduce heat to a low simmer for 15 minutes. (Tip: don't walk away, if it starts bubbling, turn the heat off, give it one stir mid-cook if you need to, and resume).
+After 15 minutes, remove the pan from the heat and let the quinoa sit for 5 more minutes or until the almond milk is absorbed and the quinoa is cooked. Taste and add additional spices to your liking.
+Scoop the quinoa into two bowls and top with toasted almonds, toasted coconut, and fruit. Serve with maple syrup if you like. Enjoy as a fluffy pilaf, or as more a porridge with warm almond milk poured on top.
+Notes
+- cooked quinoa can be stored in the fridge for 4-5 days. Serve at room temp or heat it as you're ready to serve. If it's dry, add a few more splashes of almond milk.
+- sub in whatever seasonal fruit you like, dried fruits are also delicious here."
+                                                          },
+                                                          {
+                                                            author: users[3],
+                                                            image: Image.create(
+                                                              url: "https://www.filepicker.io/api/file/NpwIVZqQQcCqVH14mCGU"
+                                                            ),
+                                                            title: "Matcha Mango Smoothies",
+                                                            tag_ids: [1, 5, 6, 7],
+                                                            body: "Serves: 2 large or 3 small smoothies
+Ingredients
+2 tablespoons Aiya Matcha Zen Cafe Blend
+(or 2 teaspoons Aiya Cooking Grade Matcha)
+1 cup almond milk
+1 mango, sliced
+a few handfuls of ice
+optional - 1 frozen banana
+Instructions
+Blend all ingredients until smooth. For a creamier smoothie, add a frozen banana."
+                                                            },
+                                                            {
+                                                              author: users[3],
+                                                              image: Image.create(
+                                                                url: "https://www.filepicker.io/api/file/KJJ7jPwoScCLViSBJljQ"
+                                                              ),
+                                                              title: "Curried Sweet Potato Soup",
+                                                              tag_ids: [2, 3, 5, 6, 18],
+                                                              body: "Serves: serves 3-4 as a main, 4-6 as a side
+Ingredients
+2 tablespoons coconut oil
+1 onion, chopped
+2 cloves garlic, minced
+1 tablespoons madras curry powder
+2 medium sweet potatoes, chopped into cubes
+½ cup peas (can be frozen)
+1 can lite coconut milk (2 cups)
+2-4 cups veggie broth (less for a thicker consistency, more for thicker)
+2 tablespoons brown sugar
+squeeze of one juicy lime
+a few handfuls of spinach
+salt
+handful of chopped cilantro, for garnish
+a few pinches of red pepper flakes
+Instructions
+In a large pot, heat coconut oil. Add onion and some salt salt. Cook, stirring, until it becomes translucent. (about 5 minutes). Add curry powder and garlic and cook for another 30 seconds (don’t let either burn).
+Add a good squeeze of lime, coconut milk, broth, chopped sweet potatoes, brown sugar and a little more salt. Turn heat down and simmer, covered, until the sweet potatoes are soft (20-30 minutes).
+Stir in the peas and spinach and cook for just another minute or two.
+Taste and adjust seasonings, adding a few pinches of red pepper flakes if you want it a little spicy.
+Top with cilantro and serve with naan bread on the side."
+                                                            },
+                                                            {
+                                                              author: users[3],
+                                                              image: Image.create(
+                                                                url: "https://www.filepicker.io/api/file/kiby54sRg2eNtdqoRduz"
+                                                              ),
+                                                              title: "Creamy Vegan Tomato Soup",
+                                                              tag_ids: [2, 3, 5, 6, 10, 18],
+                                                              body: "serves 2-3
+
+INGREDIENTS:
+a few tablespoons of olive oil
+4 shallots, chopped
+2 cloves of garlic, smashed
+1/2 cup white wine
+4 cups veggie broth
+1 cup coconut milk (I used full fat), plus more if needed at the end
+1/2 cup sun dried tomatoes (from a jar, packed in oil)
+pinch of dried oregano
+red pepper flakes
+handful of coarsely chopped fresh basil, plus extra for garnish
+2 teaspoons balsamic vinegar (or to taste)
+1-2 teaspoons or so maple syrup or a pinch of sugar (optional, to taste)
+1/4 cup toasted pine nuts (optional, but adds a nice richness)
+salt & pepper
+
+METHOD:
+Heat oil a medium pot, heat oil over medium heat. Add shallots and garlic, some salt & pepper, and cook until the shallots are transluscent. About 4 minutes.
+
+Add wine, stir, and let the wine cook out for another few minutes. Add broth, coconut milk, and sundried tomatoes and a pinch of dried oregano and red pepper flakes. Stir, then reduce heat and let simmer for 30 minutes or so.
+
+Remove from heat, add a handful of basil and blend the soup until smooth, ideally in a Vitamix or similar.
+
+Taste and add balsamic, maple syrup or sugar, and pine nuts. Give the blender just a few pulses. Taste and adjust seasonings. Serve with an extra swirl of coconut milk, some chopped basil, and a few red pepper flakes on top."
+                                                            },
+                                                            {
+                                                              author: users[3],
+                                                              image: Image.create(
+                                                                url: "https://www.filepicker.io/api/file/Y5HuYvSLSGiIeN9FSffQ"
+                                                              ),
+                                                              title: "Vegan Blackberry Lemon Cake",
+                                                              tag_ids: [4, 6, 14, 15],
+                                                              body: "Serves: serves 4-6
+Ingredients
+1 cup white flour
+1 cup spelt flour
+1 teaspoon baking powder
+1 teaspoon baking soda
+½ teaspoon salt
+1 cup almond milk
+¾ cup sugar
+½ cup coconut oil, melted
+juice and zest of one lemon (equalling ¼ cup juice)
+1 teaspoon lemon oil
+1 teaspoon vanilla
+blackberry topping:
+1 cup blackberries
+1 teaspoon sugar
+pinch of salt
+coconut cream frosting:
+this recipe plus a few drops of lemon oil
+Instructions
+Preheat oven to 350 and grease a 6\" round cake pan or equivalent.
+In a medium bowl, sift together all dry ingredients except for the sugar.
+In another bowl, whisk together the almond milk, sugar, coconut oil, lemon juice, lemon zest, lemon oil and vanilla. Gradually add in your dry ingredients, whisking together each addition.
+Pour the batter into your baking pan and bake for 25-30 minutes or until a toothpick comes out nearly clean.
+While the cake cools, mix together the blackberries, sugar, and a pinch of salt. Using your hands or a fork, gently mash some of the berries. Set aside.
+Once the cake is cool, frost & top with the blackberries.
+Notes
+Note: This cake is on the crumbly side since it has no egg. For best cohesion, let it cool completely before digging in.
+
+This cake is best served same-day otherwise the coconut cream melts (at room temp). If you intend to keep it longer, make smaller cakes, store the frosting separately in the fridge and frost as you're ready to eat."
+                                                            }
+                                                          ])
+
+
+
+
+recipes[0].comments.create([
+    { author: users[2],
+      body: "It's zucchini season!"
+    },
+    {
+      author: users[3],
+      body: "A lot of dairy in this!"
+    }
+])
+
+recipes[0].annotations.create([
+    { author: users[2],
+      start_idx: 427,
+      end_idx: 441,
+      body: "Any ideas for substitutions?"
+    },
+    {
+      author: users[0],
+      start_idx: 209,
+      end_idx: 238,
+      body: "I probably used twice as much of this and still would have enjoyed more!"
+    }
+])
+
+recipes[9].comments.create([
+    { author: users[3],
+      body: "Hmmm..."
+    },
+    {
+      author: users[0],
+      body: "Wow, this looks incredible!"
+    }
+])
