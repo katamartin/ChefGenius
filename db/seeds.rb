@@ -104,7 +104,7 @@ Arrange slices of tomatoes over fried provolone on bread, sprinkle with salt and
                           },
                           {
                             author: users[1],
-                            image: Image.create("https://www.filepicker.io/api/file/eWFmdiVSwKs7pAYTGwzW"),
+                            image: Image.create(url: "https://www.filepicker.io/api/file/eWFmdiVSwKs7pAYTGwzW"),
                             title: "Spaghetti Pangrattato",
                             tag_ids: [1, 3, 5, 8, 13],
                             body: "Serves 2, in generous heaps, or 3, petitely
@@ -139,7 +139,7 @@ Assemble dish: Once pasta is drained, return it to the empty pot or a large skil
                             },
                             {
                               author: users[1],
-                              image: Image.create("https://www.filepicker.io/api/file/l1yJILGZQ2W2exPToe1A"),
+                              image: Image.create(url: "https://www.filepicker.io/api/file/l1yJILGZQ2W2exPToe1A"),
                               title: "Berry Yogurt Popsicles",
                               tag_ids: [4, 14],
                               body: "Makes 10 popsicles
@@ -163,7 +163,7 @@ If using conventional molds, snap on the lid and freeze until solid, 3 to 4 hour
                               },
                               {
                                 author: users[1],
-                                image: Image.create("https://www.filepicker.io/api/file/6ToJCqYaSa6qLPT17jt5"),
+                                image: Image.create(url: "https://www.filepicker.io/api/file/6ToJCqYaSa6qLPT17jt5"),
                                 title: "Liège Waffles",
                                 tag_ids: [1, 4],
                                 body: "Makes 16 thick waffles, just about 4 inches across each.
