@@ -10,7 +10,7 @@
       <a class="tag" href="#/tags/<%= tag.escape("id") %>"><%= tag.escape("label") %></a>
       <% }) %>
     <br><br>
-    <p class="recipe-body"><%= recipe.escape("body") %></p>
+    <p class="recipe-body" data-toggle="tooltip" title="Highlight text to begin annotation" data-placement="right"><%= recipe.escape("body") %></p>
     <a href="">Recipe Index</a>
     <% if (recipe.get("author_id") == ChefGenius.CURRENT_USER.id) { %>
       <button class="delete">Delete Recipe</button><br>
