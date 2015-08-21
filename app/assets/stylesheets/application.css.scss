@@ -226,6 +226,16 @@ a.tag:hover {
   border: gray solid 1px;
 }
 
+.search-width {
+  width: 150%;
+  left: -30%;
+}
+
+.dropdown-menu {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /*!
  * bootstrap-tokenfield
  * https://github.com/sliptree/bootstrap-tokenfield
