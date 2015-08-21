@@ -27,19 +27,23 @@ tags = Tag.create([{ label: 'breakfast' },
                    { label: 'banana' },
                    { label: 'soup' }
                   ])
-users = User.create([{ email: 'guest@geni.us',
+users = User.create([{
+                       email: 'guest@geni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      },
-                     { email: 'kata@geni.us'
+                     {
+                       email: 'kata@geni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      },
-                     { email: 'foodluv3r@geni.us',
+                     {
+                       email: 'foodluv3r@geni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      },
-                     { email: 'veryvegan@geni.us',
+                     {
+                       email: 'veryvegan@geni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      }
