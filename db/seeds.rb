@@ -82,7 +82,7 @@ Make filling: Spread the zucchini out over several layers of paper towels. Sprin
 
 Prepare galette: Preheat oven to 400 degrees. On a floured work surface, roll the dough out into a 12-inch round. Transfer to an ungreased baking sheet (though if you line it with parchment paper, it will be easier to transfer it to a plate later). Spread the ricotta mixture evenly over the bottom of the galette dough, leaving a 2-inch border. Shingle the zucchini attractively on top of the ricotta in concentric circles, starting at the outside edge. Drizzle the remaining tablespoon of the garlic and olive oil mixture evenly over the zucchini. Fold the border over the filling, pleating the edge to make it fit. The center will be open. Brush crust with egg yolk glaze.
 
-Bake the galette until the cheese is puffed, the zucchini is slightly wilted and the galette is golden brown, 30 to 40 minutes. Remove from the oven, sprinkle with basil, let stand for 5 minutes, then slide the galette onto a serving plate. Cut into wedges and serve hot, warm or at room temperature."
+Bake the galette until the cheese is puffed, the zucchini is slightly wilted and the galette is golden brown, 30 to 40 minutes. Remove from the oven, sprinkle with basil, let stand for 5 minutes, then slide the galette onto a serving plate. Cut into wedges and serve hot, warm or at room temperature.".split("\n").join("\r\n")
                           },
                           {
                             author: users[1],
@@ -101,7 +101,7 @@ Spread each slice of bread with mayonnaise and set aside.
 
 Heat a skillet, preferably nonstick, over medium-low heat. Add a thin layer of olive oil and let it heat until shimmering. Add first slice of provone to skillet and fry it until crusty and golden underneath. Using a very thin spatula (this “flexible fish spatula” style is my favorite, for everything) carefully flip slice. It’s probably not going to flip neatly and you’ll probably curse me and also Hess but a messy slice will taste no less delicious than a photogenic one, promise. Just do your best. Fry the slice on the other side until golden underneath, then lift this browned cheese mess out of the pan and onto your first prepared bread slice. Repeat with remaining slices of cheese, frying more than one at a time if you’re now more comfortable with the process.
 
-Arrange slices of tomatoes over fried provolone on bread, sprinkle with salt and pepper and eat with one hand while calming an irate newborn with the other (if you’re me) or with two hands, from a plate, sitting down with a napkin on your lap, you civilized thing (if you’re not me, clearly)."
+Arrange slices of tomatoes over fried provolone on bread, sprinkle with salt and pepper and eat with one hand while calming an irate newborn with the other (if you’re me) or with two hands, from a plate, sitting down with a napkin on your lap, you civilized thing (if you’re not me, clearly).".split("\n").join("\r\n")
                           },
                           {
                             author: users[1],
@@ -136,7 +136,7 @@ Cook pasta: Bring a large pot of well salted water to a generous boil and cook p
 
 Meanwhile, make crispy eggs: Wipe out breadcrumbs skillet. Return to stove over high heat and add a generous glug of olive oil per egg. Once hot enough that the oil begins to smoke, add egg(s). They’re going to hiss and splatter so step back as soon as you do. Spoon some of the cooking oil over the eggs, carefully. Season with salt and pepper. In 1 to 2 minutes, the egg(s) will be brown and very crisp underneath and around the edges. Shimmy a thin spatula underneath the egg(s) (a flexible fish spatula works great here), being careful not to break the yolk. If you’re cooking for someone who shouldn’t be eating runny yolks (ahem), you can flip the egg over and cook it for another 30 seconds or so before removing it. Transfer cooked egg(s) to paper towels to drain.
 
-Assemble dish: Once pasta is drained, return it to the empty pot or a large skillet with 1 tablespoon olive oil and a splash or two (or all, if needed to loosen pasta) of reserved cooking water. Over high heat, toss with capers and parsley for 1 minute. Divide among bowls or plates. Sprinkle with Pecorino, if using, then 1/3 of breadcrumb (pangrattato) mixture. Place an egg over each dish, and break up with a fork. Eat immediately."
+Assemble dish: Once pasta is drained, return it to the empty pot or a large skillet with 1 tablespoon olive oil and a splash or two (or all, if needed to loosen pasta) of reserved cooking water. Over high heat, toss with capers and parsley for 1 minute. Divide among bowls or plates. Sprinkle with Pecorino, if using, then 1/3 of breadcrumb (pangrattato) mixture. Place an egg over each dish, and break up with a fork. Eat immediately.".split("\n").join("\r\n")
                             },
                             {
                               author: users[1],
@@ -160,7 +160,7 @@ Whisk yogurt and chilled syrup together.
 
 Place the berry mixture and any juices that have accumulated in a blender and whirl until desired texture. (I left a few tiny chunks throughout.) If you loathe the seeds from raspberries or blackberries, puree fully and press through a fine-mesh strainer to remove seeds. Assemble popsicles by alternating pouring a little of the yogurt mixture, then a little of the berry mixture into each popsicle mold, repeating as desired until you reach 1/4-inch from the tops (to leave room for expansion as they freeze). Use a skewer to lightly swirl the mixtures together.
 
-If using conventional molds, snap on the lid and freeze until solid, 3 to 4 hours. If using glasses or other unconventional molds, freeze until the pops are beginning to set (45 minutes to 1 hour), then insert the sticks and freeze until solid, 3 to 4 hours. If using an instant ice pop maker, follow the manufacturer’s instructions."
+If using conventional molds, snap on the lid and freeze until solid, 3 to 4 hours. If using glasses or other unconventional molds, freeze until the pops are beginning to set (45 minutes to 1 hour), then insert the sticks and freeze until solid, 3 to 4 hours. If using an instant ice pop maker, follow the manufacturer’s instructions.".split("\n").join("\r\n")
                               },
                               {
                                 author: users[1],
@@ -200,7 +200,7 @@ To serve: You can serve these any number of ways: with ice cream or whipped crea
 
 Keep leftover waffles, should such a thing exist, in the freezer. If you’re making the full batch with the express intent of freezing them, you might want to cook them to half-a-shade lighter, so that when they’re reheated in a 200 degree oven, they won’t get too dark.
 
-Cleaning up: As you make more and more of these waffles, the melted sugar might pile deliciously up on your waffle iron. As I mentioned above, I’ve fallen in love with a waffle maker with removable plates and sure didn’t mind the ease with which I cleaned this up. But don’t fret if you’re stuck with the well, stuck, kind, even if it’s coated with hardened caramel because warm water melts sugar, 100% of the time. Thus, a rubbing even a non-abrasive soaked in warm water back and forth over any sugar-hardened bits will dissolve them."
+Cleaning up: As you make more and more of these waffles, the melted sugar might pile deliciously up on your waffle iron. As I mentioned above, I’ve fallen in love with a waffle maker with removable plates and sure didn’t mind the ease with which I cleaned this up. But don’t fret if you’re stuck with the well, stuck, kind, even if it’s coated with hardened caramel because warm water melts sugar, 100% of the time. Thus, a rubbing even a non-abrasive soaked in warm water back and forth over any sugar-hardened bits will dissolve them.".split("\n").join("\r\n")
                                 },
                                 {
                                   author: users[1],
@@ -227,7 +227,7 @@ In a large bowl, cream the butter and sugars together with an electric mixer unt
 
 Scoop cookies into 1 1/2 tablespoon (I used a #40 scoop) mounds, spacing them apart on the prepared baking sheet. Sprinkle each with a few flakes of sea salt. Bake for 11 to 12 minutes, until golden on the outside but still very gooey and soft inside. Out of the oven, let rest on baking sheet out of the for 5 minutes before transferring a cooling rack.
 
-Extra dough — I know, what’s that?! — can be formed into scoops and frozen on a sheet until solid, then transferred to a freezer bag. I’ve baked these right from the freezer; they need, at most, 1 minute more baking time. You could also form them into a 2-inch log, freeze it, and slice and bake the cookies off as desired. The only difference I’ve noted between the cookies baked right away and those baked a day or more later is that the older cookie dough is less puffy when baked."
+Extra dough — I know, what’s that?! — can be formed into scoops and frozen on a sheet until solid, then transferred to a freezer bag. I’ve baked these right from the freezer; they need, at most, 1 minute more baking time. You could also form them into a 2-inch log, freeze it, and slice and bake the cookies off as desired. The only difference I’ve noted between the cookies baked right away and those baked a day or more later is that the older cookie dough is less puffy when baked.".split("\n").join("\r\n")
                                   },
                                   {
                                     author: users[1],
@@ -258,7 +258,7 @@ Make crust: Combine graham crumbs, sugar and salt in a medium bowl and stir unti
 
 Make filling: Zest limes into the bottom of a medium bowl until you have 1 1/2 tablespoons. Beat zest and egg yolks with an electric mixer until pale and thick, about 5 minutes. Add sweetened condensed milk and beat until thickened again, about 3 minutes more. Squeeze zested limes until you have 2/3 cups juice. Whisk into yolk mixture until combined. Pour into graham crust and bake pie for another 10 minutes, until set but not browned on top at all. Let pie cool completely before adding topping — you can do this outside (thank you, January!) or even in your freezer (but don’t forget about it) to hasten the process, and your pie reward, along.
 
-Make topping: In a medium bowl, beat cream and sugar until soft peaks are formed. Spread over top of chilled pie. Ideally, pie should be chilled at least another 2 to 3 hours with the cream on top so that it can fully set before you take a slice, but whether that happens is between you and your pie."
+Make topping: In a medium bowl, beat cream and sugar until soft peaks are formed. Spread over top of chilled pie. Ideally, pie should be chilled at least another 2 to 3 hours with the cream on top so that it can fully set before you take a slice, but whether that happens is between you and your pie.".split("\n").join("\r\n")
                                     },
                                     {
                                       author: users[2],
@@ -278,7 +278,7 @@ Ingredients
 Crushed ice
 Instructions
 
-Scoop out the flesh inside the passion fruits and add it to a shaker, along with green tea and honey. Shake until the honey has completely dissolved. Add the whiskey and shake to blend. Divide the mixture into two glasses filled with crushed ice. Drink up."
+Scoop out the flesh inside the passion fruits and add it to a shaker, along with green tea and honey. Shake until the honey has completely dissolved. Add the whiskey and shake to blend. Divide the mixture into two glasses filled with crushed ice. Drink up.".split("\n").join("\r\n")
                                       },
                                       {
                                         author: users[2],
@@ -310,7 +310,7 @@ TO FRY THE DONUTS: Add enough canola oil to a frying-pot until it reaches 1 1/2\
 TO SERVE: Mix powdered sugar together with ground allspice, and spoon generously over the warm donuts.
 Notes
 
-This recipe is best made with high-gluten bread flour, with protein-content in between 11% ~ 14%. The prolonged kneading which turns it into an extremely shiny, elastic and stretchable dough is also important to develop the desired chewiness. I've never attempted to make this recipe by bare hands, but if you do, I'd imagine it would be quite a work-out but not entirely impossible."
+This recipe is best made with high-gluten bread flour, with protein-content in between 11% ~ 14%. The prolonged kneading which turns it into an extremely shiny, elastic and stretchable dough is also important to develop the desired chewiness. I've never attempted to make this recipe by bare hands, but if you do, I'd imagine it would be quite a work-out but not entirely impossible.".split("\n").join("\r\n")
                                         },
                                         {
                                           author: users[2],
@@ -353,7 +353,7 @@ If your oven is tall enough to hang the duck, you can insert a hook (any kitchen
 
 Roast the duck for 3 hours until golden browned and glorious, turning it once or twice accordingly for evenness.  If at the last 20 min, it looks like it needs a boost, turn the heat up to 375ºF/190ºC.
 
-To cut the duck:  The best tool for this is a shark kitchen-scissor.  Remove all the toothpicks, then cut the breasts starting from the cavity-opening, right through the center, until you reach the neck.  Then turn the duck over, and cut the thin strip of back bone (sacrificing as little meat as you can) starting from the butt, right through the center, until you reach the neck as well.  Then separate the legs and wings from the breasts, and cut everything into smaller pieces.  Serve immediately."
+To cut the duck:  The best tool for this is a shark kitchen-scissor.  Remove all the toothpicks, then cut the breasts starting from the cavity-opening, right through the center, until you reach the neck.  Then turn the duck over, and cut the thin strip of back bone (sacrificing as little meat as you can) starting from the butt, right through the center, until you reach the neck as well.  Then separate the legs and wings from the breasts, and cut everything into smaller pieces.  Serve immediately.".split("\n").join("\r\n")
                                           },
                                           {
                                             author: users[2],
@@ -395,7 +395,7 @@ Heat up 1 tbsp of olive oil in a soup-pot over medium-high heat and saute the he
 
 To make the kafir lime leaf oil:  While the soup is simmering, torn the soft leafy-parts of the kafir lime leaves from the tough central rib.  Discard the ribs.  Ground the leaves and sea salt with a stone-mortar (or mince extremely fine by hand with a knife), then add the extra virgin olive oil and mix evenly together.  Set aside.
 
-Add to each serving with 1/2 tsp of the kafir lime leaf oil, and 1 tbsp more of coconut cream.  Serve with rustic bread and a wedge of lime."
+Add to each serving with 1/2 tsp of the kafir lime leaf oil, and 1 tbsp more of coconut cream.  Serve with rustic bread and a wedge of lime.".split("\n").join("\r\n")
                                             },
                                             {
                                               author: users[2],
@@ -412,7 +412,7 @@ Add to each serving with 1/2 tsp of the kafir lime leaf oil, and 1 tbsp more of 
 1 1/2 ounce (3 tbsp) of freshly squeezed lemon juice, strained of seeds and pulp
 1/2 ounce (1 tbsp) of bourbon
 2 cups of ice
-Add the pitted cherries and brown sugar in the shaker and mash with a rolling pin or wooden spoon until the sugar has melted and a lot of juice has released.  Add the amaretto, lemon juice, bourbon and ice.  Close the lid of the shaker and shake until the shaker is almost too cold to hold, approx 15 ~ 20 seconds.  Pour the cocktail into a pre-chilled glass through the shaker-strainer.  If you want the mashed cherries and a few ice-cubes in the cocktail like I do, open the shaker and fish out the cherries with a spoon.  Add to the cocktail with a few ice-cubes."
+Add the pitted cherries and brown sugar in the shaker and mash with a rolling pin or wooden spoon until the sugar has melted and a lot of juice has released.  Add the amaretto, lemon juice, bourbon and ice.  Close the lid of the shaker and shake until the shaker is almost too cold to hold, approx 15 ~ 20 seconds.  Pour the cocktail into a pre-chilled glass through the shaker-strainer.  If you want the mashed cherries and a few ice-cubes in the cocktail like I do, open the shaker and fish out the cherries with a spoon.  Add to the cocktail with a few ice-cubes.".split("\n").join("\r\n")
                                               },
                                               {
                                                 author: users[2],
@@ -443,7 +443,7 @@ Wash the arugula and trim off the tough roots if any.  You should have 170 g aft
 
 Add arugula, Greek yogurt, grated Parmigiano cheese, toasted pine nuts, garlic, salt, black pepper and nutmeg in a food processor.  Run until finely blended.  Bring a large pot of water to boil with a big pinch of salt.  Cook the pasta according to package instruction until al dente.  Drain the pasta REALLY well and rid of any excess water.  Toss with the arugula/yogurt pesto.
 
-Use a peeler to shave Parmigiano cheese over the top, and torn off small pieces of coppa/prosciutto to scatter on top.  Drizzle with extra virgin olive oil and crack fresh black peppers.  Serve warm or at room temperature."
+Use a peeler to shave Parmigiano cheese over the top, and torn off small pieces of coppa/prosciutto to scatter on top.  Drizzle with extra virgin olive oil and crack fresh black peppers.  Serve warm or at room temperature.".split("\n").join("\r\n")
                                                 },
                                                 {
                                                   author: users[2],
@@ -468,7 +468,7 @@ In a blender or with hand-held immersion blender, blend ricotta cheese, sweetene
 Freeze for at least 12 hours until hardened. If you can spare the molds, I recommend keeping the popsicles inside the molds, and only remove each as needed. Taking them out and wrapping in plastic-wrap will result in melted surface and crinkles, and all this beautiful effort will be wasted (trust me.. I know).
 Notes
 
-Instead of figs, which can be an acquired taste, you can also use peaches, summer berries, mangos, or even lychees."
+Instead of figs, which can be an acquired taste, you can also use peaches, summer berries, mangos, or even lychees.".split("\n").join("\r\n")
                                                   },
                                                   {
                                                     author: users[3],
@@ -495,7 +495,7 @@ Heat some olive oil in a large frying pan on a low heat, then add the capers and
 Chop the herbs and add them to the pan. Halve and destone the avocados, then use a knife to make criss-cross cuts through the flesh, chopping it inside the skin. Use a spoon to scoop out each half into the pan, and stir to mix all the flavours together.
 Before you drain the pasta, carefully scoop out half a mugful of the pasta water. Drain the pasta and add it to the frying pan with a little of the cooking water and a good drizzle of olive oil. Taste and add salt, pepper and lemon juice as needed. Scoop the pasta into bowls and eat on your lap.
 Notes
-I used watercress instead of parsley, and I tossed it in at the very end."
+I used watercress instead of parsley, and I tossed it in at the very end.".split("\n").join("\r\n")
                                                     },
                                                     {
                                                       author: users[3],
@@ -528,7 +528,7 @@ Bring a large pot of salted water to a boil. Scrub the potatoes and slice them i
 Meanwhile, in a large bowl, combine the olive oil, garlic, capers, mustard and generous pinches of salt and pepper. Use a rubber spatula or wooden spoon to smash the garlic and capers into a paste at the bottom of the bowl. When your potatoes are done, scoop them out of the water (leave the water boiling for your green beans), transfer them to the bowl, and toss to coat them with the 'dressing' at the bottom of the bowl.
 Prepare a bowl of ice water and place it near your pot of boiling water. Add the green beans to the boiling water and cook they’re tender but still vibrant. About 3 minutes. Scoop them out of the boiling water and into the ice bath to cool - about 1 minute. Drain and toss them into the bowl of potatoes. Add the lemon juice, zest, scallions, parsley, oregano, and red pepper flakes and toss to coat.
 Taste and add more salt, pepper, lemon juice to taste. If your salad is a little dry, drizzle some more olive oil and toss again.
-Optional: add cooked chickpeas, a (cooked) grain, and/or a few soft-boiled eggs."
+Optional: add cooked chickpeas, a (cooked) grain, and/or a few soft-boiled eggs.".split("\n").join("\r\n")
                                                       },
                                                       {
                                                         author: users[3],
@@ -555,7 +555,7 @@ Sea salt and freshly ground black pepper
 Instructions
 In a small skillet, heat a drizzle of olive oil over medium-low heat. Add the shallot and garlic and sauté until soft, about 3 to 5 minutes. Stir in the paprika and balsamic vinegar and cook another 30 seconds.
 In a high speed blender, puree the sautéed shallot mixture with the cashews, 3 tablespoons of olive oil, the water, nutritional yeast, turmeric, a pinch of cayenne, a pinch of salt, and freshly ground pepper. Makes about 1 ¾ cups of sauce.
-Bring a large pot of salted water to a boil. Prepare the pasta according to the instructions on the package, cooking until al dente. Reserve 1 cup of the pasta water. Drain and return the pasta to the pot. Stir in the sauce, adding the pasta water as needed to thin the sauce and make it creamy. Add the spinach, stir until wilted, and serve."
+Bring a large pot of salted water to a boil. Prepare the pasta according to the instructions on the package, cooking until al dente. Reserve 1 cup of the pasta water. Drain and return the pasta to the pot. Stir in the sauce, adding the pasta water as needed to thin the sauce and make it creamy. Add the spinach, stir until wilted, and serve.".split("\n").join("\r\n")
                                                         },
                                                         {
                                                           author: users[3],
@@ -586,7 +586,7 @@ After 15 minutes, remove the pan from the heat and let the quinoa sit for 5 more
 Scoop the quinoa into two bowls and top with toasted almonds, toasted coconut, and fruit. Serve with maple syrup if you like. Enjoy as a fluffy pilaf, or as more a porridge with warm almond milk poured on top.
 Notes
 - cooked quinoa can be stored in the fridge for 4-5 days. Serve at room temp or heat it as you're ready to serve. If it's dry, add a few more splashes of almond milk.
-- sub in whatever seasonal fruit you like, dried fruits are also delicious here."
+- sub in whatever seasonal fruit you like, dried fruits are also delicious here.".split("\n").join("\r\n")
                                                           },
                                                           {
                                                             author: users[3],
@@ -604,7 +604,7 @@ Ingredients
 a few handfuls of ice
 optional - 1 frozen banana
 Instructions
-Blend all ingredients until smooth. For a creamier smoothie, add a frozen banana."
+Blend all ingredients until smooth. For a creamier smoothie, add a frozen banana.".split("\n").join("\r\n")
                                                             },
                                                             {
                                                               author: users[3],
@@ -634,7 +634,7 @@ In a large pot, heat coconut oil. Add onion and some salt salt. Cook, stirring, 
 Add a good squeeze of lime, coconut milk, broth, chopped sweet potatoes, brown sugar and a little more salt. Turn heat down and simmer, covered, until the sweet potatoes are soft (20-30 minutes).
 Stir in the peas and spinach and cook for just another minute or two.
 Taste and adjust seasonings, adding a few pinches of red pepper flakes if you want it a little spicy.
-Top with cilantro and serve with naan bread on the side."
+Top with cilantro and serve with naan bread on the side.".split("\n").join("\r\n")
                                                             },
                                                             {
                                                               author: users[3],
@@ -668,7 +668,7 @@ Add wine, stir, and let the wine cook out for another few minutes. Add broth, co
 
 Remove from heat, add a handful of basil and blend the soup until smooth, ideally in a Vitamix or similar.
 
-Taste and add balsamic, maple syrup or sugar, and pine nuts. Give the blender just a few pulses. Taste and adjust seasonings. Serve with an extra swirl of coconut milk, some chopped basil, and a few red pepper flakes on top."
+Taste and add balsamic, maple syrup or sugar, and pine nuts. Give the blender just a few pulses. Taste and adjust seasonings. Serve with an extra swirl of coconut milk, some chopped basil, and a few red pepper flakes on top.".split("\n").join("\r\n")
                                                             },
                                                             {
                                                               author: users[3],
@@ -706,7 +706,7 @@ Once the cake is cool, frost & top with the blackberries.
 Notes
 Note: This cake is on the crumbly side since it has no egg. For best cohesion, let it cool completely before digging in.
 
-This cake is best served same-day otherwise the coconut cream melts (at room temp). If you intend to keep it longer, make smaller cakes, store the frosting separately in the fridge and frost as you're ready to eat."
+This cake is best served same-day otherwise the coconut cream melts (at room temp). If you intend to keep it longer, make smaller cakes, store the frosting separately in the fridge and frost as you're ready to eat.".split("\n").join("\r\n")
                                                             }
                                                           ])
 
