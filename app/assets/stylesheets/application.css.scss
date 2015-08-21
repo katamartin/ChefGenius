@@ -55,6 +55,19 @@
   width: 100%;
 }
 
+.annotation-feed-item:last-child, .comment-feed-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-feed-item, .annotation-feed-item{
+  margin-bottom: 10px;
+}
+
+.annotation-feed-item p, .comment-feed-item p {
+  margin-bottom: 0px;
+}
 .annotation-container {
   position: relative;
 }
@@ -116,10 +129,6 @@
   border-radius: 5px;
 }
 
-.user-activity p:last-child {
-  border-bottom: 1px solid #ddd;
-}
-
 .tab-content > div {
   display: none;
 }
@@ -138,8 +147,10 @@
 }
 
 .recipe-feed li:last-child {
-  border-bottom: none;
+  margin-bottom: none;
 }
+
+
 
 .glyphicon-thumbs-down {
   transform: scaleX(-1);
@@ -281,6 +292,10 @@ a.tag:hover {
 .container {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.recipe-feed {
+  position: relative;
 }
 
 /*!
