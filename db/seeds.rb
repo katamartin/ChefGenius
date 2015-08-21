@@ -94,7 +94,8 @@ Bake the galette until the cheese is puffed, the zucchini is slightly wilted and
 4 1/2-inch thick slices your favorite sturdy bread*
 4 tablespoons mayonnaise
 Two to four 1/4-inch slices provolone cheese (use larger amount for smaller slices)
-Olive oil2 medium-sized perfectly ripe tomatoes, sliced
+Olive oil
+2 medium-sized perfectly ripe tomatoes, sliced
 Flaky salt and freshly cracked black pepper, to taste
 
 Spread each slice of bread with mayonnaise and set aside.
@@ -730,7 +731,56 @@ recipes[0].annotations.create([
       start_idx: 216,
       end_idx: 245,
       body: "I probably used twice as much of this and still would have enjoyed more!"
+    },
+    {
+      author: users[1],
+      start_idx: 1307,
+      end_idx: 1372,
+      body: "This is important!!! I forgot to do this the first time around."
     }
+])
+
+recipes[2].annotations.create([
+    { author: users[1],
+      start_idx: 1319,
+      end_idx: 1363,
+      body: "Seriously, wait for the smoke if you want a good crisp!"
+    }
+])
+
+recipes[3].annotations.create([
+    { author: users[0],
+      start_idx: 1848,
+      end_idx: 1869,
+      body: "Does anyone know anything about these?"
+    }
+])
+
+recipes[3].annotations.create([
+    { author: users[2],
+      start_idx: 136,
+      end_idx: 167,
+      body: "Worked well with turpinado sugar..."
+    }
+])
+
+recipes[4].annotations.create([
+    { author: users[0],
+      start_idx: 1604,
+      end_idx: 1701,
+      body: "OOOOH!"
+    }
+])
+
+comments = recipes[4].comments.create([
+    { author: users[2],
+      body: "Thanks for posting!!!!"
+    }
+])
+
+comment.votes.create([
+  { author: users[0], value: 1 },
+  { author: users[1], value: 1 }
 ])
 
 recipes[9].comments.create([
