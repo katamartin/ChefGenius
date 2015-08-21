@@ -7,7 +7,7 @@ class Api::TagsController < ApplicationController
   end
 
   def index
-    @tags = Tag.all
+    @tags = Tag.includes(:taggings).all
     render :index
   end
 
