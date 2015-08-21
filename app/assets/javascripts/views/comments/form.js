@@ -26,6 +26,14 @@ ChefGenius.Views.CommentForm = Backbone.View.extend({
           "vote_count": 0
         });
         this.render();
+      }.bind(this),
+      error: function(model, response, options) {
+        var issues = response.responseJSON;
+        _(issues).each(function(issue) {
+          this.$(".comment.error-container").html(
+            "<div class='alert alert-danger' role='alert'>" + issue + "</div>"
+          );
+        }.bind(this))
       }.bind(this)
     });
   }

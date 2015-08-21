@@ -56,10 +56,10 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
         var issues = response.responseJSON;
         _(issues).each(function(issue) {
           var field = issue.split(" ")[0].toLowerCase();
-          $("." + field + ".error-container").html(
+          this.$("." + field + ".error-container").html(
             "<div class='alert alert-danger' role='alert'>" + issue + "</div>"
           );
-        })
+        }.bind(this))
       }.bind(this)
     });
   }
