@@ -29,22 +29,22 @@ tags = Tag.create([{ label: 'breakfast' },
                    { label: 'avocado' }
                   ])
 users = User.create([{
-                       email: 'guest@geni.us',
+                       email: 'guest@chefgeni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      },
                      {
-                       email: 'kata@geni.us',
+                       email: 'kata@chefgeni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      },
                      {
-                       email: 'foodluv3r@geni.us',
+                       email: 'foodluv3r@chefgeni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      },
                      {
-                       email: 'veryvegan@geni.us',
+                       email: 'veryvegan@chefgeni.us',
                        password_digest: BCrypt::Password.create("password"),
                        session_token: SecureRandom.urlsafe_base64(16)
                      }
@@ -721,14 +721,14 @@ recipes[0].comments.create([
 
 recipes[0].annotations.create([
     { author: users[2],
-      start_idx: 427,
-      end_idx: 441,
+      start_idx: 433,
+      end_idx: 455,
       body: "Any ideas for substitutions?"
     },
     {
       author: users[0],
-      start_idx: 209,
-      end_idx: 238,
+      start_idx: 216,
+      end_idx: 245,
       body: "I probably used twice as much of this and still would have enjoyed more!"
     }
 ])
