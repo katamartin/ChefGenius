@@ -9,6 +9,7 @@
   <strong>Annotation by <%= annotation.escape("author") %></strong>
   <br>
   <%= annotation.escape("body") %>
+  <br>
   <a class="upvote <%= upvoteClass %>" aria-label="upvote" href="javascript:void(0)"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a> <%= annotation.get("vote_count") %> <a class="downvote <%= downvoteClass %>" aria-label="downvote" href="javascript:void(0)"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></a>
 </p>
 

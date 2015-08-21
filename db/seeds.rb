@@ -716,10 +716,6 @@ This cake is best served same-day otherwise the coconut cream melts (at room tem
 recipes[0].comments.create([
     { author: users[2],
       body: "It's zucchini season!"
-    },
-    {
-      author: users[3],
-      body: "A lot of dairy in this!"
     }
 ])
 
