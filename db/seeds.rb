@@ -772,11 +772,10 @@ recipes[4].annotations.create([
     }
 ])
 
-comments = recipes[4].comments.create([
-    { author: users[2],
-      body: "Thanks for posting!!!!"
-    }
-])
+comment = recipes[4].comments.create(
+    author: users[2],
+    body: "Thanks for posting!!!!"
+)
 
 comment.votes.create([
   { author: users[0], value: 1 },
