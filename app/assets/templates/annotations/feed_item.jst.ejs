@@ -7,7 +7,9 @@
     <a href="#/recipes/<%= recipe.id %>"><%= recipe.escape("title") %></a> by <a href="#/users/<%= recipe.get("author").id %>"><%= recipe.get("author").email %></a>
   </footer>
 </blockquote>
-<pre class="response-body">
-  <strong><%= annotation.escape("formatted_date") %></strong>
-  <%= annotation.escape("body") %>
-</pre>
+<div class="comment-index-item">
+  <p>
+    <strong><%= annotation.escape("formatted_date") %></strong>
+    <%= annotation.escape("body") %>
+  </p>
+</div>

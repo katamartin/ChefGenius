@@ -14,7 +14,9 @@
     </footer>
   </blockquote>
 <% } %>
-<pre>
-  <%= comment.escape("body") %>
-  <strong><%= comment.escape("formatted_date") %></strong>
-</pre>
+<div class="comment-index-item">
+  <p>
+    <%= comment.escape("body") %>
+    <strong><%= comment.escape("formatted_date") %></strong>
+  </p>
+</div>
