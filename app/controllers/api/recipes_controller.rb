@@ -13,7 +13,7 @@ class Api::RecipesController < ApplicationController
   def create
     tag_ids = []
     params[:tags].each do |tag|
-      id = Tag.findOrCreate(tag).id
+      id = Tag.findOrCreate(tag.downcase).id
       tag_ids << id if id
     end
     @recipe = current_user.recipes.new(recipe_params.merge(tag_ids: tag_ids))
