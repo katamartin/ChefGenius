@@ -16,6 +16,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+.alert {
+  margin-bottom: 0px;
+}
+
 .background {
   background-image: url("https://www.filepicker.io/api/file/8CtkAF20QN6z4x6hNMTY");
   position: absolute;
@@ -23,8 +27,6 @@
   height: 100%;
   background-size: cover;
 }
-
-
 
 .welcome {
   background-image: url("https://www.filepicker.io/api/file/8CtkAF20QN6z4x6hNMTY");
