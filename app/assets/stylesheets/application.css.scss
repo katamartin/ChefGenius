@@ -16,6 +16,16 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+.background {
+  background-image: url("https://www.filepicker.io/api/file/8CtkAF20QN6z4x6hNMTY");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+
+
 .welcome {
   background-image: url("https://www.filepicker.io/api/file/8CtkAF20QN6z4x6hNMTY");
   background-size: 100%;
@@ -30,8 +40,31 @@
   left: 10%;
 }
 
+
 .user-form  {
   width: 50%;
+  top: 15%;
+  position: relative;
+}
+
+.user-form .submit {
+  background-color: rgba(245, 245, 245, 0.81);
+  border: none;
+  border-radius: 5px;
+}
+
+.bottom-button {
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.81);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+
+.user-form .well {
+  background-color: rgba(245, 245, 245, 0.81);
+  border: none;
 }
 
 .user-information {

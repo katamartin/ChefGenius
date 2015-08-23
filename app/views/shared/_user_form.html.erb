@@ -1,37 +1,41 @@
-<div class="container user-form">
-  <div class="well">
-    <h1><%= header_text %></h1>
+<div class="background">
+  <div class="container user-form">
+    <div class="well">
+      <h1><%= header_text %></h1>
 
-    <form action="<%= action %>" method="post">
-      <%= authenticity_token %>
+      <form action="<%= action %>" method="post">
+        <%= authenticity_token %>
 
-      <div class="form-group">
-        <label for="user_email">Email Address</label>
-        <input type="email"
-               name="user[email]"
-               class="form-control"
-               id="user_email"
-               placeholder="Email">
-      </div>
+        <div class="form-group">
+          <label for="user_email">Email Address</label>
+          <input type="email"
+                 name="user[email]"
+                 class="form-control"
+                 id="user_email"
+                 placeholder="Email">
+        </div>
+        <br>
+
+        <div class="form-group">
+          <label for="user_password">Password</label>
+          <input type="password"
+                 name="user[password]"
+                 class="form-control"
+                 id="user_password"
+                 placeholder="Password">
+        </div>
+        <br>
+
+        <input type="submit" class="submit" value="<%= header_text %>">
+        <% if header_text == "Sign in" %>
+          <button class="guest submit">Sign in as Guest</button>
+        <% end %>
+      </form>
+
       <br>
-
-      <div class="form-group">
-        <label for="user_password">Password</label>
-        <input type="password"
-               name="user[password]"
-               class="form-control"
-               id="user_password"
-               placeholder="Password">
-      </div>
-      <br>
-
-      <input type="submit" class="submit" value="<%= header_text %>">
-      <% if header_text == "Sign in" %>
-        <button class="guest">Sign in as Guest</button>
-      <% end %>
-    </form>
-
-    <br>
+    </div>
+    <div class="bottom-button">
+      <%= link_to link_text, link_action %>
+    </div>
   </div>
-  <%= link_to link_text, link_action %>
 </div>
