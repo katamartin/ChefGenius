@@ -372,6 +372,18 @@ a.tag:hover {
 .contact-content a {
   color: white;
 }
+
+.logo {
+  width: 30px;
+  float: left;
+  margin-top: -5px;
+  padding: 2px;
+  padding-right: 5px;
+}
+
+p .logo {
+  margin-top: 0px;
+}
 /*!
  * bootstrap-tokenfield
  * https://github.com/sliptree/bootstrap-tokenfield
