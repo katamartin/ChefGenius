@@ -384,6 +384,16 @@ a.tag:hover {
 p .logo {
   margin-top: 0px;
 }
+
+p.credits {
+  font-size: 12px;
+}
+
+.description .logo {
+  position: absolute;
+  left: calc(50% - 15px);
+  padding: 0px;
+}
 /*!
  * bootstrap-tokenfield
  * https://github.com/sliptree/bootstrap-tokenfield
