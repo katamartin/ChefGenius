@@ -339,6 +339,39 @@ a.tag:hover {
   position: relative;
 }
 
+.app-description {
+  margin-bottom: 0px;
+  background-image: url("https://www.filepicker.io/api/file/5hfDTJwQ2ubFv51PRWwW");
+  background-size: 175%;
+  height: 600px;
+  background-position: right;
+}
+
+.contact-info {
+  margin-bottom: 0px;
+  height: 300px;
+  background-color: #D7DAE1;
+  border-top: 10px solid;
+  border-color: rgb(231, 235, 236);
+  color: white;
+}
+
+.description {
+  width: 25%;
+  left: 75%;
+  position: absolute;
+  top: 30%;
+}
+
+.contact-content {
+  width: 33%;
+  position: absolute;
+  left: 15%;
+}
+
+.contact-content a {
+  color: white;
+}
 /*!
  * bootstrap-tokenfield
  * https://github.com/sliptree/bootstrap-tokenfield

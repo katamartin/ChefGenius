@@ -12,7 +12,13 @@ ChefGenius.Routers.Router = Backbone.Router.extend({
     "recipes/new": "newRecipe",
     "recipes/:id": "showRecipe",
     "tags/:id": "showTag",
-    "users/:id": "showUser"
+    "users/:id": "showUser",
+    "about": "about"
+  },
+
+  about: function () {
+    var view = new ChefGenius.Views.About();
+    this._swapView(view);
   },
 
   recipeSearch: function(query) {
