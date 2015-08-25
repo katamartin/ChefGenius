@@ -1,9 +1,9 @@
 ChefGenius.Views.RecipeForm = Backbone.View.extend({
   template: JST["recipes/form"],
-
-  tagName: "form",
-
-  className: "form-group",
+  // 
+  // tagName: "form",
+  //
+  // className: "form-group",
 
   events: {
     "click .save": "save",

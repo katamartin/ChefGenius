@@ -49,6 +49,17 @@
   position: relative;
 }
 
+.user-form h1 {
+  text-align: center;
+}
+
+.big-logo {
+  position: absolute;
+  left: calc(50% - 30px);
+  margin-bottom: 20px;
+  width: 60px;
+}
+
 .user-form .submit {
   background-color: rgba(245, 245, 245, 0.81);
   border: none;
@@ -393,6 +404,15 @@ p.credits {
   position: absolute;
   left: calc(50% - 15px);
   padding: 0px;
+}
+
+.recipe-form {
+  position: absolute;
+  left: 25%;
+}
+
+.recipe-form textarea {
+  height: 400px;
 }
 /*!
  * bootstrap-tokenfield
