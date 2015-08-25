@@ -741,7 +741,7 @@ annotations = recipes[0].annotations.create([
 ])
 
 comment = annotations.first.comments.create(author: users[0], body: "Maybe goat cheese or cottage cheese?")
-comment.votes.create([{ author: users[2], value: 1 }, { author: users[1], value: 1 }])
+comment.votes.create([{ user: users[2], value: 1 }, { user: users[1], value: 1 }])
 
 recipes[2].annotations.create([
     { author: users[1],
