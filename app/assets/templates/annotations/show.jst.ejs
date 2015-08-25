@@ -6,7 +6,7 @@
   <% downvoteClass = "voted" %>
 <% } %>
 <p>
-  <strong>Annotation by <%= annotation.escape("author") %></strong>
+  <strong>Annotation by <a href="#/users/<%= annotation.escape("author_id") %>"><%= annotation.escape("author") %></a></strong>
   <br>
   <%= annotation.escape("body") %>
   <br>
