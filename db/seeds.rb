@@ -720,7 +720,7 @@ recipes[0].comments.create([
     }
 ])
 
-recipes[0].annotations.create([
+annotations = recipes[0].annotations.create([
     { author: users[2],
       start_idx: 433,
       end_idx: 455,
@@ -739,6 +739,9 @@ recipes[0].annotations.create([
       body: "This is important!!! I forgot to do this the first time around."
     }
 ])
+
+comment = annotations.first.comments.create(author: users[0], body: "Maybe goat cheese or cottage cheese?")
+comment.votes.create([{ author: users[2], value: 1 }, { author: users[1], value: 1 }])
 
 recipes[2].annotations.create([
     { author: users[1],
