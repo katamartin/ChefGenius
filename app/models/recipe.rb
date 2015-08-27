@@ -17,12 +17,9 @@ class Recipe < ActiveRecord::Base
     source: :tag
   )
 
-  has_one(
-    :recipe,
-    class_name: :Recipe,
-    foreign_key: :id,
-    primary_key: :id
-  )
+  def recipe
+    self
+  end
 
   has_one :recipe_image
   has_one(
