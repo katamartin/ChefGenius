@@ -1,4 +1,6 @@
 class Api::AnnotationsController < ApplicationController
+  before_action :redirect_unless_logged_in
+
   def create
     @annotation = current_user.annotations.new(annotation_params)
     if @annotation.save

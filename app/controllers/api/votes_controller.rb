@@ -1,4 +1,6 @@
 class Api::VotesController < ApplicationController
+  before_action :redirect_unless_logged_in
+
   def create
     @vote = current_user.votes.new(vote_params)
     if @vote.save

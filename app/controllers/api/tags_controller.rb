@@ -1,4 +1,6 @@
 class Api::TagsController < ApplicationController
+  before_action :redirect_unless_logged_in
+
   def show
     @tag = Tag.
       includes(recipes: [:author, :image]).

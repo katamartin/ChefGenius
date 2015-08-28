@@ -1,4 +1,6 @@
 class Api::ImagesController < ApplicationController
+  before_action :redirect_unless_logged_in
+
   def create
     @image = Image.new(image_params)
     if @image.save

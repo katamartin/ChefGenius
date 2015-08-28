@@ -1,4 +1,6 @@
 class Api::TaggingsController < ApplicationController
+  before_action :redirect_unless_logged_in
+
   def create
     @tagging = Tagging.new(tagging_params)
     if @tagging.save

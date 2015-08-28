@@ -1,4 +1,6 @@
 class Api::UsersController < ApplicationController
+  before_action :redirect_unless_logged_in
+
   def show
     @user = User.
       includes(
