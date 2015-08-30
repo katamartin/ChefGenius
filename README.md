@@ -1,11 +1,18 @@
 # Chef Genius
 
-[Heroku link][heroku]
+[Live Link][live]
 
-[heroku]: http://chefgenius.herokuapp.com
+[live]: http://chefgeni.us
+
+## Summary
+Chef Genius is a full-stack web app built with Rails and Backbone. Chef Genius
+allows users to create, share, and annotate recipes. Annotations are created by
+simply highlighting recipe text and submitting annotation content. Users can
+also comment on recipes and annotations, vote on content, and view users'
+activity feeds.
 
 ## Minimum Viable Product
-Chef Genius is a clone of Rap Genius for recipe annotation built on Rails on and
+Chef Genius is a clone of Rap Genius for recipe annotation built on Rails and
 Backbone. Users can:
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
