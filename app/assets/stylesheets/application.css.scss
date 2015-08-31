@@ -209,12 +209,11 @@
 }
 
 a.voted {
-  // pointer-events: none;
   cursor: default;
   color: gray;
 }
 
-.recipe-body a {
+.annotation {
   color: black;
   background-color: yellow;
 }
