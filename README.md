@@ -2,7 +2,7 @@
 
 [Live Link][live]
 
-[live]: http://chefgeni.us
+[live]: http://www.chefgeni.us
 
 ## Summary
 Chef Genius is a full-stack web app built with Rails and Backbone. Chef Genius
@@ -14,7 +14,6 @@ activity feeds.
 ## Minimum Viable Product
 Chef Genius is a clone of Rap Genius for recipe annotation built on Rails and
 Backbone. Users can:
-<!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
 - [x] Create accounts
 - [x] Create sessions (log in)
