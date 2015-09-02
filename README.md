@@ -11,9 +11,10 @@ simply highlighting recipe text and submitting annotation content. Users can
 also comment on recipes and annotations, vote on content, and view users'
 activity feeds.
 
-### Screenshots
-
+### Landing Page
 ![landing]
+
+### Annotation View
 ![annotation]
 
 [landing]: ./docs/screenshots/landing.png
