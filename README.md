@@ -43,6 +43,39 @@ highlighted text. Finding the end index (or offset) is then trivial, as `t`
 provides the length of the annotation string.
 
 
+## Eager Loading
+Content-rich pages like recipe show pages render data from recipes many nested
+associations. To accomplish this quickly, eager loading is utilized server-side:
+
+```
+def show
+  @recipe = Recipe.
+    includes(
+      :author,
+      :image,
+      :tags,
+      annotations: [:votes, :author, comments: [:votes, :author]],
+      comments: [:votes, :author]
+    ).
+    find(params[:id])
+  render :show
+end
+```
+
+The JSON API view may then immediately provide the dense data already retrieved
+from the database:
+
+```
+json.extract! @recipe, :title, :body, :id, :author_id
+json.author @recipe.author.email
+if @recipe.image
+  json.image @recipe.image, :id, :url
+end
+json.annotations @recipe.annotations, partial: 'api/annotations/annotation', as: :annotation
+json.tags @recipe.tags, :label, :id
+json.comments @recipe.comments, partial: 'api/comments/comment', as: :comment
+```
+
 ## Minimum Viable Product
 Chef Genius is a clone of Rap Genius for recipe annotation built on Rails and
 Backbone. Users can:
