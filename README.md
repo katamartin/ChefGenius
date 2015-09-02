@@ -11,6 +11,15 @@ simply highlighting recipe text and submitting annotation content. Users can
 also comment on recipes and annotations, vote on content, and view users'
 activity feeds.
 
+### Screenshots
+
+![landing]
+![annotation]
+
+[landing]: ./docs/screenshots/landing.png
+[annotation]: ./docs/screenshots/annotation_view.png
+
+
 ## Minimum Viable Product
 Chef Genius is a clone of Rap Genius for recipe annotation built on Rails and
 Backbone. Users can:
