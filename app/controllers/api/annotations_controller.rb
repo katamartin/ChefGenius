@@ -15,7 +15,7 @@ class Api::AnnotationsController < ApplicationController
     @annotation = Annotation.find(params[:id])
     @recipe = @annotation.recipe
     @annotation.try(:destroy)
-    render :index
+    render json: @recipe
   end
 
   def show

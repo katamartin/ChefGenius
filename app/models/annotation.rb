@@ -11,8 +11,8 @@ class Annotation < ActiveRecord::Base
 
   belongs_to :recipe
 
-  has_many :comments, as: :commentable
-  has_many :votes, as: :votable
+  has_many :comments, as: :commentable, dependent: :destroy
+  has_many :votes, as: :votable, dependent: :destroy
   has_many :voters, through: :votes, source: :user
 
   def non_overlapping

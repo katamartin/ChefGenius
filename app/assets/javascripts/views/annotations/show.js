@@ -12,7 +12,8 @@ ChefGenius.Views.AnnotationShow = Backbone.CompositeView.extend({
 
   events: {
     "click .upvote": "upvote",
-    "click .downvote": "downvote"
+    "click .downvote": "downvote",
+    "click .delete": "delete"
   },
 
   addCommentFormView: function() {
@@ -75,5 +76,15 @@ ChefGenius.Views.AnnotationShow = Backbone.CompositeView.extend({
 
   downvote: function() {
     this.vote(-1);
+  },
+
+  delete: function(event) {
+    event.preventDefault();
+    var confirmed = confirm("Are you sure you want to delete this annotation?");
+    if (confirmed) {
+      this.model.recipe().annotations().remove(this.model);
+      this.model.destroy();
+      this.remove();
+    }
   }
 });

@@ -2,6 +2,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   initialize: function() {
     this.listenTo(this.model, "sync", this.render);
     this.listenTo(this.model, "sync", this.addCommentsIndexView);
+    this.listenTo(this.model.annotations(), "remove destroy", this.attachAnnotationLinks);
     this.listenTo(this.model.annotations(), "add", this.attachAnnotationLink);
     this.listenTo(this.model.annotations(), "add", this.addNewAnnotationView);
     this.addCommentFormView();
@@ -108,7 +109,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     var view = this;
     var body = view.$(".recipe-body").text();
     if (!body.trim()) { return; }
-    this.bodySplit = this.bodySplit || body.split("");
+    this.bodySplit = body.split("");
     this.model.annotations().each(function(annotation) {
       view.addAnnotationLink(annotation, body);
     });
