@@ -1,6 +1,6 @@
 ChefGenius.Views.RecipeForm = Backbone.View.extend({
   template: JST["recipes/form"],
-  
+
   tagName: "form",
 
   className: "form-group",
@@ -50,7 +50,7 @@ ChefGenius.Views.RecipeForm = Backbone.View.extend({
     this.model.save({}, {
       success: function() {
         this.collection.add(this.model, {merge: true});
-        Backbone.history.navigate("", {trigger: true});
+        Backbone.history.navigate("#/recipes/" + this.model.get("id"), {trigger: true});
       }.bind(this),
       error: function(model, response, options) {
         var issues = response.responseJSON;

@@ -8,7 +8,7 @@ ChefGenius.Views.CommentsIndex = Backbone.CompositeView.extend({
     this.collection.each(this.addCommentItemView.bind(this));
   },
 
-  className: "comments-index",
+  className: "comments-index-view",
 
   addCommentItemView: function(comment) {
     var subview = new ChefGenius.Views.CommentIndexItem({model: comment});

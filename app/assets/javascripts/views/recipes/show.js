@@ -22,9 +22,6 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
     this.attachAnnotationLinks();
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
     return this;
   },
 
@@ -44,7 +41,11 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
   addCommentsIndexView: function() {
     var comments = this.model.comments();
     var subview = new ChefGenius.Views.CommentsIndex({collection: comments});
-    this.unshiftSubview(".comments-container", subview);
+    if (this.subviews(".comments-index").first()) {
+      return;
+    } else {
+      this.addSubview(".comments-index", subview);
+    }
   },
 
   addAnnotationFormView: function(annotation) {
@@ -67,7 +68,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
       model: comment,
       collection: this.model.comments()
     });
-    this.addSubview(".comments-container", subview);
+    this.addSubview(".comments-form", subview);
   },
 
   isValidSelection: function(t) {
