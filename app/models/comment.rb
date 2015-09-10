@@ -11,7 +11,7 @@ class Comment < ActiveRecord::Base
     primary_key: :id
   )
 
-  has_many :votes, as: :votable
+  has_many :votes, as: :votable, dependent: :destroy
   has_many :voters, through: :votes, source: :user
 
   def vote_count

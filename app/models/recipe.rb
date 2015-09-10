@@ -24,7 +24,7 @@ class Recipe < ActiveRecord::Base
     primary_key: :id
   )
 
-  has_one :recipe_image
+  has_one :recipe_image, dependent: :destroy
   has_one(
     :image,
     through: :recipe_image,
