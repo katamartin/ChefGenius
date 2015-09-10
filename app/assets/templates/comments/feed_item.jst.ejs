@@ -1,7 +1,7 @@
 <% if (comment.commentable === "recipe") { %>
   <% var recipe = comment.recipe() %>
   <% var id = recipe.get("id") %>
-  <a href="#/recipes/<%= recipe.get("id") %>"><%= recipe.escape("title") %></a>
+  <h3><a href="#/recipes/<%= recipe.get("id") %>"><%= recipe.escape("title") %></a></h3>
 <% } else { %>
   <% var annotation = comment.annotation() %>
   <% var start_idx = annotation.escape("start_idx") %>
