@@ -84,7 +84,7 @@ Prepare galette: Preheat oven to 400 degrees. On a floured work surface, roll th
 
 Bake the galette until the cheese is puffed, the zucchini is slightly wilted and the galette is golden brown, 30 to 40 minutes. Remove from the oven, sprinkle with basil, let stand for 5 minutes, then slide the galette onto a serving plate. Cut into wedges and serve hot, warm or at room temperature.
 
-Source: <a href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
                           },
                           {
                             author: users[1],
@@ -106,7 +106,7 @@ Heat a skillet, preferably nonstick, over medium-low heat. Add a thin layer of o
 
 Arrange slices of tomatoes over fried provolone on bread, sprinkle with salt and pepper and eat with one hand while calming an irate newborn with the other (if you’re me) or with two hands, from a plate, sitting down with a napkin on your lap, you civilized thing (if you’re not me, clearly).
 
-Source: <a href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
                           },
                           {
                             author: users[1],
@@ -143,7 +143,7 @@ Meanwhile, make crispy eggs: Wipe out breadcrumbs skillet. Return to stove over 
 
 Assemble dish: Once pasta is drained, return it to the empty pot or a large skillet with 1 tablespoon olive oil and a splash or two (or all, if needed to loosen pasta) of reserved cooking water. Over high heat, toss with capers and parsley for 1 minute. Divide among bowls or plates. Sprinkle with Pecorino, if using, then 1/3 of breadcrumb (pangrattato) mixture. Place an egg over each dish, and break up with a fork. Eat immediately.
 
-Source: <a href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
                             },
                             {
                               author: users[1],
@@ -169,7 +169,7 @@ Place the berry mixture and any juices that have accumulated in a blender and wh
 
 If using conventional molds, snap on the lid and freeze until solid, 3 to 4 hours. If using glasses or other unconventional molds, freeze until the pops are beginning to set (45 minutes to 1 hour), then insert the sticks and freeze until solid, 3 to 4 hours. If using an instant ice pop maker, follow the manufacturer’s instructions.
 
-Source: <a href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
                               },
                               {
                                 author: users[1],
@@ -211,7 +211,7 @@ Keep leftover waffles, should such a thing exist, in the freezer. If you’re ma
 
 Cleaning up: As you make more and more of these waffles, the melted sugar might pile deliciously up on your waffle iron. As I mentioned above, I’ve fallen in love with a waffle maker with removable plates and sure didn’t mind the ease with which I cleaned this up. But don’t fret if you’re stuck with the well, stuck, kind, even if it’s coated with hardened caramel because warm water melts sugar, 100% of the time. Thus, a rubbing even a non-abrasive soaked in warm water back and forth over any sugar-hardened bits will dissolve them.
 
-Source: <a href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
                                 },
                                 {
                                   author: users[1],
@@ -240,7 +240,7 @@ Scoop cookies into 1 1/2 tablespoon (I used a #40 scoop) mounds, spacing them ap
 
 Extra dough — I know, what’s that?! — can be formed into scoops and frozen on a sheet until solid, then transferred to a freezer bag. I’ve baked these right from the freezer; they need, at most, 1 minute more baking time. You could also form them into a 2-inch log, freeze it, and slice and bake the cookies off as desired. The only difference I’ve noted between the cookies baked right away and those baked a day or more later is that the older cookie dough is less puffy when baked.
 
-Source: <a href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
                                   },
                                   {
                                     author: users[1],
@@ -273,7 +273,7 @@ Make filling: Zest limes into the bottom of a medium bowl until you have 1 1/2 t
 
 Make topping: In a medium bowl, beat cream and sugar until soft peaks are formed. Spread over top of chilled pie. Ideally, pie should be chilled at least another 2 to 3 hours with the cream on top so that it can fully set before you take a slice, but whether that happens is between you and your pie.
 
-Source: <a href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://smittenkitchen.com'>Smitten Kitchen</a>".split("\n").join("\r\n")
                                     },
                                     {
                                       author: users[2],
@@ -295,7 +295,7 @@ Instructions
 
 Scoop out the flesh inside the passion fruits and add it to a shaker, along with green tea and honey. Shake until the honey has completely dissolved. Add the whiskey and shake to blend. Divide the mixture into two glasses filled with crushed ice. Drink up.
 
-Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
                                       },
                                       {
                                         author: users[2],
@@ -329,7 +329,7 @@ Notes
 
 This recipe is best made with high-gluten bread flour, with protein-content in between 11% ~ 14%. The prolonged kneading which turns it into an extremely shiny, elastic and stretchable dough is also important to develop the desired chewiness. I've never attempted to make this recipe by bare hands, but if you do, I'd imagine it would be quite a work-out but not entirely impossible.
 
-Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
                                         },
                                         {
                                           author: users[2],
@@ -374,7 +374,7 @@ Roast the duck for 3 hours until golden browned and glorious, turning it once or
 
 To cut the duck:  The best tool for this is a shark kitchen-scissor.  Remove all the toothpicks, then cut the breasts starting from the cavity-opening, right through the center, until you reach the neck.  Then turn the duck over, and cut the thin strip of back bone (sacrificing as little meat as you can) starting from the butt, right through the center, until you reach the neck as well.  Then separate the legs and wings from the breasts, and cut everything into smaller pieces.  Serve immediately.
 
-Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
                                           },
                                           {
                                             author: users[2],
@@ -418,7 +418,7 @@ To make the kafir lime leaf oil:  While the soup is simmering, torn the soft lea
 
 Add to each serving with 1/2 tsp of the kafir lime leaf oil, and 1 tbsp more of coconut cream.  Serve with rustic bread and a wedge of lime.
 
-Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
                                             },
                                             {
                                               author: users[2],
@@ -437,7 +437,7 @@ Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r
 2 cups of ice
 Add the pitted cherries and brown sugar in the shaker and mash with a rolling pin or wooden spoon until the sugar has melted and a lot of juice has released.  Add the amaretto, lemon juice, bourbon and ice.  Close the lid of the shaker and shake until the shaker is almost too cold to hold, approx 15 ~ 20 seconds.  Pour the cocktail into a pre-chilled glass through the shaker-strainer.  If you want the mashed cherries and a few ice-cubes in the cocktail like I do, open the shaker and fish out the cherries with a spoon.  Add to the cocktail with a few ice-cubes.
 
-Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
                                               },
                                               {
                                                 author: users[2],
@@ -470,7 +470,7 @@ Add arugula, Greek yogurt, grated Parmigiano cheese, toasted pine nuts, garlic, 
 
 Use a peeler to shave Parmigiano cheese over the top, and torn off small pieces of coppa/prosciutto to scatter on top.  Drizzle with extra virgin olive oil and crack fresh black peppers.  Serve warm or at room temperature.
 
-Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
                                                 },
                                                 {
                                                   author: users[2],
@@ -497,7 +497,7 @@ Notes
 
 Instead of figs, which can be an acquired taste, you can also use peaches, summer berries, mangos, or even lychees.
 
-Source: <a href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://ladyandpups.com'>Lady and Pups</a>".split("\n").join("\r\n")
                                                   },
                                                   {
                                                     author: users[3],
@@ -526,7 +526,7 @@ Before you drain the pasta, carefully scoop out half a mugful of the pasta water
 Notes
 I used watercress instead of parsley, and I tossed it in at the very end.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                     },
                                                     {
                                                       author: users[3],
@@ -561,7 +561,7 @@ Prepare a bowl of ice water and place it near your pot of boiling water. Add the
 Taste and add more salt, pepper, lemon juice to taste. If your salad is a little dry, drizzle some more olive oil and toss again.
 Optional: add cooked chickpeas, a (cooked) grain, and/or a few soft-boiled eggs.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                       },
                                                       {
                                                         author: users[3],
@@ -590,7 +590,7 @@ In a small skillet, heat a drizzle of olive oil over medium-low heat. Add the sh
 In a high speed blender, puree the sautéed shallot mixture with the cashews, 3 tablespoons of olive oil, the water, nutritional yeast, turmeric, a pinch of cayenne, a pinch of salt, and freshly ground pepper. Makes about 1 ¾ cups of sauce.
 Bring a large pot of salted water to a boil. Prepare the pasta according to the instructions on the package, cooking until al dente. Reserve 1 cup of the pasta water. Drain and return the pasta to the pot. Stir in the sauce, adding the pasta water as needed to thin the sauce and make it creamy. Add the spinach, stir until wilted, and serve.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                         },
                                                         {
                                                           author: users[3],
@@ -623,7 +623,7 @@ Notes
 - cooked quinoa can be stored in the fridge for 4-5 days. Serve at room temp or heat it as you're ready to serve. If it's dry, add a few more splashes of almond milk.
 - sub in whatever seasonal fruit you like, dried fruits are also delicious here.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                           },
                                                           {
                                                             author: users[3],
@@ -643,7 +643,7 @@ optional - 1 frozen banana
 Instructions
 Blend all ingredients until smooth. For a creamier smoothie, add a frozen banana.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                             },
                                                             {
                                                               author: users[3],
@@ -675,7 +675,7 @@ Stir in the peas and spinach and cook for just another minute or two.
 Taste and adjust seasonings, adding a few pinches of red pepper flakes if you want it a little spicy.
 Top with cilantro and serve with naan bread on the side.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                             },
                                                             {
                                                               author: users[3],
@@ -711,7 +711,7 @@ Remove from heat, add a handful of basil and blend the soup until smooth, ideall
 
 Taste and add balsamic, maple syrup or sugar, and pine nuts. Give the blender just a few pulses. Taste and adjust seasonings. Serve with an extra swirl of coconut milk, some chopped basil, and a few red pepper flakes on top.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                             },
                                                             {
                                                               author: users[3],
@@ -751,7 +751,7 @@ Note: This cake is on the crumbly side since it has no egg. For best cohesion, l
 
 This cake is best served same-day otherwise the coconut cream melts (at room temp). If you intend to keep it longer, make smaller cakes, store the frosting separately in the fridge and frost as you're ready to eat.
 
-Source: <a href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
+Source: <a target='_blank' href='http://loveandlemons.com'>Love and Lemons</a>".split("\n").join("\r\n")
                                                             }
                                                           ])
 
