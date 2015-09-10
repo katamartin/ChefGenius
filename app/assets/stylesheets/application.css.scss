@@ -27,7 +27,11 @@ button {
   outline: none;
 }
 
-button:active {
+button:active, .btn:active {
+  transform: translateY(2px);
+}
+
+.recipe-index-item:active {
   transform: translateY(2px);
 }
 
@@ -301,7 +305,7 @@ a.tag:hover {
   padding: 5px;
 }
 
-.welcome-content .btn {
+.btn {
   background-color: gray;
   opacity: 0.5;
   border: gray solid 1px;
