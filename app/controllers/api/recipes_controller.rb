@@ -47,7 +47,7 @@ class Api::RecipesController < ApplicationController
 
   def destroy
     @recipe = current_user.recipes.find(params[:id])
-    @recipe.destroy
+    @recipe.try(:destroy)
     render :show
   end
 
