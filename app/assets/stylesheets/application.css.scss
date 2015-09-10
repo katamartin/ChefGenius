@@ -20,6 +20,17 @@
   margin-bottom: 0px;
 }
 
+button {
+  background-color: rgba(211, 211, 211, 0.25);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
 .background {
   background-image: url("https://www.filepicker.io/api/file/8CtkAF20QN6z4x6hNMTY");
   position: absolute;
