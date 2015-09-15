@@ -22,6 +22,7 @@ ChefGenius.Views.RecipeShow = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
     this.attachAnnotationLinks();
+    $('.recipe-body').tooltip('show');
     return this;
   },
 
